@@ -12,6 +12,15 @@ button {
   background-color: unset;
   border: none;
 }
+.wrap {
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
+}
+.churrasco-image{
+  width: 50%;
+  height: 100%;
+}
 
 /*
 .kanit-thin {
