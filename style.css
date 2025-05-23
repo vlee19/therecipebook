@@ -1,18 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
   font-family: "Kanit";
 }
-button {
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  background-color: #f0f0f0;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+button{
   font-family: "Kanit";
 }
-.star {
+.star{
   font-size: 1.5rem;
   color: #ff9800;
   background-color: unset;
   border: none;
 }
-.wrap {
+.wrap{
   display: block;
   object-fit: cover;
   overflow: hidden;
@@ -22,7 +55,7 @@ button {
   height: 100%;
   margin: -250px 0px -150px 0px;
 }
-.recipe-icons {
+.recipe-icons{
   width: 20px;
 }
 
