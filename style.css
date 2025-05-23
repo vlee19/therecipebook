@@ -22,6 +22,9 @@ button {
   height: 100%;
   margin: -250px 0px -150px 0px;
 }
+.recipe-icons {
+  width: 20px;
+}
 
 /*
 .kanit-thin {
