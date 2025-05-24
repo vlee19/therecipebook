@@ -3,14 +3,14 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: "Kanit";
 }
 body{
   min-height: 100vh;
-  font-family: "Kanit";
 }
 #logo{
   width: 37px;
-  padding: 2px 30px 0px 0px;
+  padding: 2px 30px;
 }
 nav{
   background-color: white;
@@ -72,8 +72,26 @@ nav li:first-child{
 .off-screen-menu.active{
   transform: translateX(0);
 }
-button{
-  font-family: "Kanit";
+.search-bar{
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  padding: 0 20px;
+  color: black;
+}
+::placeholder{
+  color: rgb(192, 191, 191);
 }
 .star{
   font-size: 1.5rem;
