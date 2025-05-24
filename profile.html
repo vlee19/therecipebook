@@ -10,6 +10,25 @@
   </head>
 
   <body>
+    <nav>
+      <div class="off-screen-menu">
+        <ul class="sidebar">
+          <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="#">Grocery Stores</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    
+      <ul>
+        <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        <li><img id="logo" src="therecipebook_icon.png" alt="TheRecipeBook"></li>  
+      </ul>
+    </nav>
+    <script src="script.js"></script>
+
     <div class="header">
       <h2>TheGatorBites</h2>
       
