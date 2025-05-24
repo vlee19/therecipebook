@@ -1,8 +1,8 @@
+const offScreenMenu = document.querySelector('.off-screen-menu');
+
 function showSidebar(){
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'flex'
+  offScreenMenu.classList.add('active');
 }
 function hideSidebar(){
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'none'
+  offScreenMenu.classList.remove('active');
 }
