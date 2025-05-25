@@ -74,12 +74,19 @@ nav li:first-child{
 }
 .search-bar{
   width: 100%;
-  max-width: 700px;
-  background: rgba(255, 255, 255, 0.2);
+  max-width: 570px;
+  background: rgba(186, 184, 184, 0.2);
   display: flex;
   align-items: center;
   border-radius: 60px;
-  padding: 10px 20px;
+  padding: 4px 16px;
+  height: 30px;
+}
+.search-bar-wrapper{
+  flex: 1;
+  display: flex;
+  height: 38px;
+  justify-content: center;
 }
 .search-bar input{
   background: transparent;
@@ -87,11 +94,18 @@ nav li:first-child{
   border: 0;
   outline: none;
   font-size: 20px;
-  padding: 0 20px;
+  padding-left: 20px;
   color: black;
 }
 ::placeholder{
   color: rgb(192, 191, 191);
+}
+.search-bar svg{
+  border: none;
+  width: 27px;
+  height: 27px;
+  background: rgba(255, 255, 255, 0);
+  padding-top: 3px;
 }
 .star{
   font-size: 1.5rem;
