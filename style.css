@@ -78,7 +78,7 @@ nav li:first-child{
   background: rgba(186, 184, 184, 0.2);
   display: flex;
   align-items: center;
-  border-radius: 60px;
+  border-radius: 10px;
   padding: 4px 16px;
   height: 30px;
 }
@@ -96,6 +96,7 @@ nav li:first-child{
   font-size: 20px;
   padding-left: 20px;
   color: black;
+  line-height: 1.1;
 }
 ::placeholder{
   color: rgb(192, 191, 191);
