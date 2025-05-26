@@ -169,6 +169,13 @@ nav li:first-child{
   border-radius: 20px;
   box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
 }
+.recipe-title img{
+  display: flex;
+  align-items: center;
+}
+.recipe-title .flag{
+  margin-left: auto;
+}
 .star{
   font-size: 1.5rem;
   color: #ff9800;
@@ -179,6 +186,9 @@ nav li:first-child{
   display: block;
   object-fit: cover;
   overflow: hidden;
+}
+.flag{
+  width: 250px;
 }
 .churrasco-image{
   width: 40%;
