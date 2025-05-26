@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Create Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="recipe-form">
+    <h2>Create a Recipe</h2>
+
+    <label for="recipe-name">Recipe Name</label>
+    <input type="text" id="recipe-name" placeholder="e.g., Spaghetti Bolognese" required>
+
+    <label for="recipe-description">Description</label>
+    <textarea id="recipe-description" rows="4" placeholder="Describe your recipe..." required></textarea>
+
+    <label for="ingredient-input">Add Ingredient</label>
+    <div class="ingredient-controls">
+      <input type="text" id="ingredient-input" placeholder="e.g., 2 cups flour">
+      <button type="button" class="add-btn" onclick="addIngredient()">+ Add</button>
+    </div>
+
+    <ul id="ingredients-list" class="ingredient-list"></ul>
+
+    <button class="submit-btn">Submit Recipe</button>
+  </div>
+
+  <script>
+    function addIngredient() {
+      const input = document.getElementById("ingredient-input");
+      const ingredient = input.value.trim();
+
+      if (ingredient === "") {
+        alert("Please enter an ingredient.");
+        return;
+      }
+
+      const list = document.getElementById("ingredients-list");
+      const li = document.createElement("li");
+      li.textContent = ingredient;
+      list.appendChild(li);
+
+      input.value = "";
+      input.focus();
+    }
+  </script>
+
+</body>
+</html>
