@@ -51,6 +51,9 @@ p{
   pointer-events: all;
 }
 nav{
+  position: sticky;
+  top: 0;
+  width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -198,15 +201,15 @@ nav li:first-child{
 .recipe-icons{
   width: 20px;
 }
-.recipePic-row {/* container for the boxes /
+.recipePic-row {/* container for the boxes */
   display: flex;
-  gap: 10px; / space between boxes /
+  gap: 10px; /* space between boxes */
   margin-bottom: 15px;
-  justify-content: center; / center the boxes horizontally /
-  flex-wrap: wrap; / allow boxes to wrap to the next line if needed /
+  justify-content: center; /* center the boxes horizontally */
+  flex-wrap: wrap; /* allow boxes to wrap to the next line if needed */
 }
 
-.recipePic {/ individual box */
+.recipePic {/* individual box */
   width: 150px;
   height: 150px;
   background-color: #d8cdbb;
