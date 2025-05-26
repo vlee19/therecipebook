@@ -8,9 +8,28 @@
 body{
   min-height: 100vh;
 }
+h1{
+  font-weight: 700;
+}
 h2{
   font-weight: 600;
 }
+h3{
+  font-weight: 500;
+}
+h4{
+  font-weight: 300;
+}
+h5{
+  font-weight: 200;
+}
+h6{
+  font-weight: 100;
+}
+p{
+  font-weight: 400;
+}
+
 #logo{
   width: 37px;
   padding: 2px 30px;
@@ -125,6 +144,15 @@ nav li:first-child{
   background: rgba(255, 255, 255, 0);
   padding-top: 1px;
 }
+#clear{
+  cursor: pointer;
+  display: none;
+}
+#clear:hover{
+  background-color: rgba(221, 221, 221, 0.693);
+  border-radius: 20px;
+  box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
+}
 .star{
   font-size: 1.5rem;
   color: #ff9800;
@@ -137,7 +165,7 @@ nav li:first-child{
   overflow: hidden;
 }
 .churrasco-image{
-  width: 90%;
+  width: 40%;
   height: 100%;
   margin: -250px 0px -150px 0px;
 }

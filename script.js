@@ -1,5 +1,7 @@
 const offScreenMenu = document.querySelector('.off-screen-menu');
 const menuButton = document.querySelector('[onclick="showSidebar()"');
+const searchInput = document.getElementById('search');
+const clear = document.getElementById('clear');
 
 function showSidebar(){
   offScreenMenu.classList.add('active');
@@ -14,3 +16,11 @@ function outsideClick(event){
     hideSidebar();
   }
 }
+searchInput.addEventListener('input', () => {
+  clear.style.display = searchInput.value ? 'block' : 'none';
+});
+clear.addEventListener('click', () => {
+  searchInput.value = '';
+  clear.style.display = 'none';
+  searchInput.focus();
+});
