@@ -31,8 +31,8 @@ p{
 }
 
 #logo{
-  width: 37px;
-  padding: 2px 30px;
+  width: 42px;
+  padding: 0px 2px;
 }
 .overlay{
   position: fixed;
@@ -51,7 +51,7 @@ p{
   pointer-events: all;
 }
 nav{
-  background-color: white;
+  background-color: #9F5829;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav ul{
@@ -198,31 +198,7 @@ nav li:first-child{
 .recipe-icons{
   width: 20px;
 }
-.recipePic-row {/* container for the boxes /
-  display: flex;
-  gap: 10px; / space between boxes /
-  margin-bottom: 15px;
-  justify-content: center; / center the boxes horizontally /
-  flex-wrap: wrap; / allow boxes to wrap to the next line if needed /
-}
 
-.recipePic {/ individual box */
-  width: 150px;
-  height: 150px;
-  background-color: #d8cdbb;
-  border: 2px solid #333;
-
-}
-.header-welcome {
-  background-color: #a88269;
-  padding: 20px;
-  border-radius: 1px;
-  border: 2px solid #444;
-  text-align: center;
-  max-width: 100%;
-  margin-bottom: 20px;
-  margin-top: 0px;
-}
 /*
 .kanit-thin {
   font-family: "Kanit", sans-serif;
