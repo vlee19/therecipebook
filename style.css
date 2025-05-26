@@ -13,10 +13,10 @@ h2{
 }
 #logo{
   width: 42px;
-  padding: 0px 0px;
+  padding: 0px 2px;
 }
 nav{
-  background-color: #7F5B1F;
+  background-color: #9F5829;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav ul{
@@ -148,23 +148,26 @@ nav li:first-child{
   display: flex;
   gap: 10px; /* space between boxes */
   margin-bottom: 15px;
+  justify-content: center; /* center the boxes horizontally */
+  flex-wrap: wrap; /* allow boxes to wrap to the next line if needed */
 }
 
 .recipePic {/* individual box */
   width: 150px;
   height: 150px;
-  background-color: rgb(142, 135, 135);
+  background-color: #d8cdbb;
   border: 2px solid #333;
+  
 }
 .header-welcome {
-  background-color: #7b662d;
+  background-color: #a88269;
   padding: 20px;
   border-radius: 1px;
   border: 2px solid #444;
   text-align: center;
   max-width: 100%;
   margin-bottom: 20px;
-  margin-top: .5px;
+  margin-top: 0px;
 }
 
 /*
