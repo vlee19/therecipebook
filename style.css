@@ -172,15 +172,33 @@ nav li:first-child{
   border-radius: 20px;
   box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
 }
-.recipe-title img{
+.recipe-header{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.recipe-title .flag{
-  margin-left: auto;
+.title{
+  display: flex;
+  flex-direction: column;
+}
+.title h2{
+  font-size: 64px;
+  margin: 0;
+  padding-left: 30px;
+}
+.title h4{
+  font-size: 20px;
+  padding-left: 35px;
+}
+.flag{
+  width: 280px;
+  padding-right: 35px;
+}
+.sub-header{
+  padding-left: 30px;
 }
 .star{
-  font-size: 1.5rem;
+  font-size: 60px;
   color: #ff9800;
   background-color: unset;
   border: none;
@@ -190,16 +208,10 @@ nav li:first-child{
   object-fit: cover;
   overflow: hidden;
 }
-.flag{
-  width: 250px;
-}
 .churrasco-image{
   width: 40%;
   height: 100%;
   margin: -250px 0px -150px 0px;
-}
-.recipe-icons{
-  width: 20px;
 }
 .recipe-icons{
   width: 20px;
