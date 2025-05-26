@@ -144,20 +144,20 @@ nav li:first-child{
 .recipe-icons{
   width: 20px;
 }
-.box-row {/* container for the boxes */
+.recipePic-row {/* container for the boxes */
   display: flex;
   gap: 10px; /* space between boxes */
   margin-bottom: 15px;
 }
 
-.box {/* individual box */
+.recipePic {/* individual box */
   width: 150px;
   height: 150px;
   background-color: rgb(142, 135, 135);
   border: 2px solid #333;
 }
-.header-box {
-  background-color: #8a7a4d;
+.header-welcome {
+  background-color: #7b662d;
   padding: 20px;
   border-radius: 8px;
   border: 2px solid #444;
