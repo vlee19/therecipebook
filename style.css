@@ -191,7 +191,7 @@ nav li:first-child{
   padding-left: 35px;
 }
 .flag{
-  width: 280px;
+  width: 350px;
   padding-right: 35px;
 }
 .sub-header{
@@ -203,13 +203,17 @@ nav li:first-child{
   background-color: unset;
   border: none;
 }
+.info{
+  font-size: 25px;
+}
 .wrap{
-  display: block;
+  display: flex;
   object-fit: cover;
   overflow: hidden;
+  justify-content: center;
 }
 .churrasco-image{
-  width: 40%;
+  width: 45%;
   height: 100%;
   margin: -250px 0px -150px 0px;
 }
