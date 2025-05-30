@@ -283,7 +283,20 @@ nav li:first-child{
   cursor: pointer;
   background-color: #f0f0f0;
 }
-
+.profile-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* space between tabs */
+  margin-bottom: 20px; /* space below the tabs */
+}
+.profile-tabs button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+}
 /* Rectangle 25 */
 
 /*
