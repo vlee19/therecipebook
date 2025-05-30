@@ -245,11 +245,13 @@ nav li:first-child{
 .recipe-sections{
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  
+  align-items: flex-start; 
+}
+.ingredients{
+  padding-left: 50px;
 }
 .ingredients ul{
-  padding-left: 20px;
+  padding-left: 50px;
 }
 .ingredients .header{
   display: flex;
