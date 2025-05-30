@@ -274,6 +274,9 @@ nav li:first-child{
   background-color: #9b9696;
 }
 
+.profile-tabs button:hover{
+  background-color: #8d8c8c;
+}
 /*
 .kanit-thin {
   font-family: "Kanit", sans-serif;
