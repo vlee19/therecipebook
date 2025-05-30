@@ -50,24 +50,25 @@ p{
   opacity: 1;
   pointer-events: all;
 }
-nav{
+
+.off-screen-menu{
   position: sticky;
   top: 0;
   width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-nav ul{
+nav ul, .off-screen-menu{
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-nav li{
+nav li,.off-screen-menu li{
   height: 50px;
 }
-nav a{
+nav a, .off-screen-menu a{
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
@@ -77,7 +78,7 @@ nav a{
   font-size: 45px;
   font-weight: 200;
 }
-nav a:hover{
+nav a:hover, .off-screen-menu a:hover{
   background-color: #f0f0f0;
 }
 nav li:first-child{
