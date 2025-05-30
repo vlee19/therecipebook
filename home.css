@@ -173,20 +173,7 @@ nav li:first-child{
   box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
 }
 
-.recipePic-row {/* container for the boxes */
-  display: flex;
-  gap: 10px; /* space between boxes */
-  margin-bottom: 15px;
-  justify-content: center; /* center the boxes horizontally */
-  flex-wrap: wrap; /* allow boxes to wrap to the next line if needed */
-}
 
-.recipePic {/* individual box */
-  width: 150px;
-  height: 150px;
-  background-color: #d8cdbb;
-  border: 2px solid #333;
-}
 .header-welcome {
   background-color: #a88269;
   padding: 20px;
@@ -197,11 +184,69 @@ nav li:first-child{
   margin-bottom: 20px;
   margin-top: 0px;
 }
-.recipePic {/* individual box */
+.recipePic-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto 30px auto; /* center the row and add bottom spacing */
+}
+
+.recipePic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.recipePic img {
   width: 150px;
   height: 150px;
+  object-fit: cover;
   background-color: #d8cdbb;
   border: 2px solid #333;
+  border-radius: 6px;
+}
+
+.recipePic-caption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+ .image-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+  gap: 30px; /* spacing between cards */
+  padding: 20px;
+  max-width: 1000px;
+  height: fit-content; /* adjust height based on content */
+  margin: 20px auto 0 auto; /* center the grid and add spacing */
+}
+
+.image-card {
+  position: relative;
+  width: 293px;
+  height: 218px;            
+  aspect-ratio: 4 / 3;     /* keeps image height proportional */
+  background: url(image.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-caption {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #333;
 }
 
 /* Rectangle 25 */
