@@ -3,6 +3,9 @@ const menuButton = document.querySelector('[onclick="showSidebar()"');
 const searchInput = document.getElementById('search');
 const clear = document.getElementById('clear');
 const overlay = document.querySelector('.overlay');
+const component = document.querySelector('.component');
+const complete = document.querySelector('complete');
+
 
 function showSidebar(event){
   event.preventDefault();

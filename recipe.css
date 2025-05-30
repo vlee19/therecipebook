@@ -206,11 +206,6 @@ nav li:first-child{
   background-color: unset;
   border: none;
 }
-.profile-rating-container .star {
-  color: gold;           /* example style */
-  font-size: 16px;       /* or whatever you want */
-  padding-left: 4px;
-}
 .wrap{
   display: flex;
   object-fit: cover;
@@ -218,14 +213,52 @@ nav li:first-child{
   justify-content: center;
 }
 .churrasco-image{
-  width: 45%;
-  height: 100%;
-  margin: -250px 0px -150px 0px;
+  display: block;
+  object-fit: cover;
+  width: 50%;
+  height: 460px;
+  margin: auto;
+  border-radius: 20px;
+}
+.sub-header{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .sub-header svg{
-  width: 50px;
+  width: 60px;
 }
-
+.info{
+  font-size: 23px;
+}
+.servings,.time{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.description{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+.recipe-sections{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+.ingredients ul{
+  padding-left: 20px;
+}
+.ingredients .header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.directions{
+  padding-right: 35px;
+}
 /* Rectangle 25 */
 
 /*
