@@ -253,8 +253,12 @@ nav li:first-child{
   cursor: pointer;
   background-color: #9b9696;
 }
-/* Rectangle 25 */
-
+.content h3{
+  padding-left: 40px;
+}
+.caption{
+  padding-left: 50px;
+}
 /*
 .kanit-thin {
   font-family: "Kanit", sans-serif;
