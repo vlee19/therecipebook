@@ -172,6 +172,7 @@ nav li:first-child{
   border-radius: 20px;
   box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
 }
+
 .recipe-header{
   display: flex;
   align-items: center;
@@ -219,99 +220,7 @@ nav li:first-child{
 .sub-header svg{
   width: 50px;
 }
-.recipePic-row {/* container for the boxes */
-  display: flex;
-  gap: 10px; /* space between boxes */
-  margin-bottom: 15px;
-  justify-content: center; /* center the boxes horizontally */
-  flex-wrap: wrap; /* allow boxes to wrap to the next line if needed */
-}
 
-.recipePic {/* individual box */
-  width: 150px;
-  height: 150px;
-  background-color: #d8cdbb;
-  border: 2px solid #333;
-}
-.header-welcome {
-  background-color: #a88269;
-  padding: 20px;
-  border-radius: 1px;
-  border: 2px solid #444;
-  text-align: center;
-  max-width: 100%;
-  margin-bottom: 20px;
-  margin-top: 0px;
-}
-.recipePic {/* individual box */
-  width: 150px;
-  height: 150px;
-  background-color: #d8cdbb;
-  border: 2px solid #333;
-}
-.header-welcome {
-  background-color: #a88269;
-  padding: 20px;
-  border-radius: 1px;
-  border: 2px solid #444;
-  text-align: center;
-  max-width: 100%;
-  margin-bottom: 20px;
-  margin-top: 0px;
-}
-
-.header-profile {
-  display: flex;
-  align-items: center;       
-  gap: 90px;                 
-  background-color: #a88269;
-  padding: 80px;
-  border-radius: 1px;
-  border: 2px solid #444;
-  max-width: 100%;
-  margin-bottom: 20px;
-  margin-top: 0px;
-}
-#TheGatorBites{
-  width: 400px;
-  height: 300px;
-  padding: 0px 0px;
-}
-.profile-rating-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* space between lines (optional) */
-}
-.title-row {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* optional: space between heading and buttons */
-}
-
-.title-row h1 {
-  margin: 0; /* remove default spacing to align better */
-}
-
-.title-row button {
-  padding: 6px 12px;
-  font-size: 14px;
-  cursor: pointer;
-  background-color: #f0f0f0;
-}
-.profile-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 40px; /* space between tabs */
-  margin-bottom: 20px; /* space below the tabs */
-}
-.profile-tabs button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #f0f0f0;
-  border: none;
-  border-radius: 5px;
-}
 /* Rectangle 25 */
 
 /*
