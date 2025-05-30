@@ -10,7 +10,7 @@
     <h1>Create a Recipe</h1>
 
     <label for="recipe-name">Recipe Name</label>
-    <input type="text" id="recipe-name" placeholder="e.g., Spaghetti Bolognese" required>
+    <input type="text" id="recipe-name" placeholder="e.g., Churrasco con Arroz" required>
 
     <label for="recipe-description">Description</label>
     <textarea id="recipe-description" rows="4" placeholder="Describe your recipe..." required></textarea>
@@ -39,6 +39,7 @@
 
 
     <button class="submit-btn">Submit Recipe</button>
+    <button onclick="backToProfile()" class="back-btn">Back to Profile</button>
   </div>
 
 <script>
@@ -53,7 +54,11 @@
 
     const list = document.getElementById("ingredients-list");
     const li = document.createElement("li");
-    li.textContent = ingredient;
+    li.innerHTML = `
+      <span>${ingredient}</span>
+      <button onclick="editItem(this)">Edit</button>
+      <button onclick="deleteItem(this)">Delete</button>
+    `;
     list.appendChild(li);
 
     input.value = "";
@@ -65,19 +70,44 @@
     const direction = input.value.trim();
 
     if (direction === "") {
-      alert("Please enter a direction step.");
+      alert("Please enter a direction.");
       return;
     }
 
     const list = document.getElementById("directions-list");
     const li = document.createElement("li");
-    li.textContent = direction;
+    li.innerHTML = `
+      <span>${direction}</span>
+      <button onclick="editItem(this)">Edit</button>
+      <button onclick="deleteItem(this)">Delete</button>
+    `;
     list.appendChild(li);
 
     input.value = "";
     input.focus();
   }
+
+  function deleteItem(button) {
+    const li = button.parentElement;
+    li.remove();
+  }
+
+  function editItem(button) {
+    const li = button.parentElement;
+    const span = li.querySelector("span");
+    const currentText = span.textContent;
+    const newText = prompt("Edit text:", currentText);
+    if (newText !== null && newText.trim() !== "") {
+      span.textContent = newText.trim();
+    }
+  }
+
+  const backBtn = document.querySelector('[onclick="backToProfile()"]');
+  function backToProfile(){
+    window.location.href = 'profile.html';
+  }
 </script>
+
 
 
 </body>
