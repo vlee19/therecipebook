@@ -256,6 +256,12 @@ nav li:first-child{
   align-items: center;
   gap: 10px;
 }
+.component,.complete{
+  display: none;
+}
+.component.active,.complete.active{
+  display: block;
+} 
 .directions{
   padding-right: 35px;
 }
