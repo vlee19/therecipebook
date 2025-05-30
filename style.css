@@ -205,9 +205,6 @@ nav li:first-child{
   background-color: unset;
   border: none;
 }
-.info{
-  font-size: 25px;
-}
 .wrap{
   display: flex;
   object-fit: cover;
