@@ -1,11 +1,12 @@
 const offScreenMenu = document.querySelector('.off-screen-menu');
-const menuButton = document.querySelector('[onclick="showSidebar()"');
+const menuButton = document.querySelector('[onclick="showSidebar()"]');
 const searchInput = document.getElementById('search');
 const clear = document.getElementById('clear');
 const overlay = document.querySelector('.overlay');
+const componentBtn = document.querySelector('[onclick="showByComponent()"]');
+const completeBtn = document.querySelector('[onclick="showFullList()"]');
 const component = document.querySelector('.component');
-const complete = document.querySelector('complete');
-
+const complete = document.querySelector('.complete');
 
 function showSidebar(event){
   event.preventDefault();
@@ -34,3 +35,13 @@ clear.addEventListener('click', () => {
   clear.style.display = 'none';
   searchInput.focus();
 });
+function showByComponent(event){
+  event.preventDefault();
+  component.classList.add('active');
+  complete.classList.remove('active');
+}
+function showFullList(event){
+  event.preventDefault();
+  complete.classList.add('active');
+  component.classList.remove('active');
+}
