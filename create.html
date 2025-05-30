@@ -39,6 +39,7 @@
 
 
     <button class="submit-btn">Submit Recipe</button>
+    <button onclick="backToProfile()" class="back-btn">Back to Profile</button>
   </div>
 
 <script>
@@ -99,6 +100,11 @@
     if (newText !== null && newText.trim() !== "") {
       span.textContent = newText.trim();
     }
+  }
+
+  const backBtn = document.querySelector('[onclick="backToProfile()"]');
+  function backToProfile(){
+    window.location.href = 'profile.html';
   }
 </script>
 
