@@ -249,7 +249,10 @@ nav li:first-child{
   font-size: 16px;
   color: #000000;
 }
-
+.recipePic-row img:hover{
+  cursor: pointer;
+  background-color: #9b9696;
+}
 /* Rectangle 25 */
 
 /*

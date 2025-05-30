@@ -7,6 +7,8 @@ const componentBtn = document.querySelector('[onclick="showByComponent()"]');
 const completeBtn = document.querySelector('[onclick="showFullList()"]');
 const component = document.querySelector('.component');
 const complete = document.querySelector('.complete');
+const recipeBtn = document.querySelector('[onclick="showRecipe]');
+
 
 const createBtn = document.querySelector('[onclick="showCreate()"]');
 
@@ -49,4 +51,7 @@ function showFullList(event){
 }
 function showCreate(){
   window.location.href = 'create.html';
+}
+function showRecipe(){
+  window.location.href = 'recipe.html';
 }
