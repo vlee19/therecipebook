@@ -195,6 +195,8 @@ nav li:first-child{
   padding-right: 35px;
 }
 .sub-header{
+  display: flex;
+  align-items: center;
   padding-left: 30px;
 }
 .star{
@@ -219,8 +221,8 @@ nav li:first-child{
   height: 100%;
   margin: -250px 0px -150px 0px;
 }
-.recipe-icons{
-  width: 20px;
+.sub-header svg{
+  width: 50px;
 }
 .recipePic-row {/* container for the boxes */
   display: flex;
