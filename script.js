@@ -8,6 +8,8 @@ const completeBtn = document.querySelector('[onclick="showFullList()"]');
 const component = document.querySelector('.component');
 const complete = document.querySelector('.complete');
 
+const createBtn = document.querySelector('[onclick="showCreate()"]');
+
 function showSidebar(event){
   event.preventDefault();
   offScreenMenu.classList.add('active');
@@ -44,4 +46,7 @@ function showFullList(event){
   event.preventDefault();
   complete.classList.add('active');
   component.classList.remove('active');
+}
+function showCreate(){
+  window.location.href = 'create.html';
 }
