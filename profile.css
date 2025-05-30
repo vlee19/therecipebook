@@ -269,6 +269,10 @@ nav li:first-child{
   color: #333;
 }
 
+.image-grid img:hover{
+  cursor: pointer;
+  background-color: #9b9696;
+}
 
 
 
