@@ -173,101 +173,37 @@ nav li:first-child{
   box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
 }
 
-.recipe-header{
+.recipePic-row {/* container for the boxes */
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 10px; /* space between boxes */
+  margin-bottom: 15px;
+  justify-content: center; /* center the boxes horizontally */
+  flex-wrap: wrap; /* allow boxes to wrap to the next line if needed */
 }
-.title{
-  display: flex;
-  flex-direction: column;
+
+.recipePic {/* individual box */
+  width: 150px;
+  height: 150px;
+  background-color: #d8cdbb;
+  border: 2px solid #333;
 }
-.title h2{
-  font-size: 64px;
-  margin: 0;
-  padding-left: 30px;
-}
-.title h4{
-  font-size: 20px;
-  padding-left: 35px;
-}
-.flag{
-  width: 350px;
-  padding-right: 35px;
-}
-.sub-header{
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
-}
-.star{
-  font-size: 60px;
-  color: #ff9800;
-  background-color: unset;
-  border: none;
-}
-.wrap{
-  display: flex;
-  object-fit: cover;
-  overflow: hidden;
-  justify-content: center;
-}
-.churrasco-image{
-  display: block;
-  object-fit: cover;
-  width: 50%;
-  height: 460px;
-  margin: auto;
-  border-radius: 20px;
-}
-.sub-header{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.sub-header svg{
-  width: 60px;
-}
-.info{
-  font-size: 23px;
-}
-.servings,.time{
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-}
-.description{
-  display: flex;
-  align-items: center;
+.header-welcome {
+  background-color: #a88269;
+  padding: 20px;
+  border-radius: 1px;
+  border: 2px solid #444;
   text-align: center;
-  font-size: 18px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
-.recipe-sections{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; 
+.recipePic {/* individual box */
+  width: 150px;
+  height: 150px;
+  background-color: #d8cdbb;
+  border: 2px solid #333;
 }
-.ingredients{
-  padding-left: 50px;
-}
-.ingredients ul{
-  padding-left: 50px;
-}
-.ingredients .header{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.component,.complete{
-  display: none;
-}
-.component.active,.complete.active{
-  display: block;
-} 
-.directions{
-  padding-right: 30px;
-  flex-wrap: wrap;
-}
+
 /* Rectangle 25 */
 
 /*
