@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Create Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="create.css">
 </head>
 <body>
-
   <div class="recipe-form">
     <h1>Create a Recipe</h1>
 
@@ -16,36 +15,70 @@
     <label for="recipe-description">Description</label>
     <textarea id="recipe-description" rows="4" placeholder="Describe your recipe..." required></textarea>
 
+    <div class="recipe-body">
+  <div class="ingredients-section">
     <label for="ingredient-input">Add Ingredient</label>
     <div class="ingredient-controls">
       <input type="text" id="ingredient-input" placeholder="e.g., 2 cups flour">
       <button type="button" class="add-btn" onclick="addIngredient()">+ Add</button>
     </div>
-
     <ul id="ingredients-list" class="ingredient-list"></ul>
+  </div>
+
+  <div class="directions-section">
+    <label for="direction-input">Add Direction</label>
+    <div class="direction-controls">
+      <input type="text" id="direction-input" placeholder="e.g., Preheat oven to 350°F">
+      <button type="button" class="add-btn" onclick="addDirection()">+ Add</button>
+    </div>
+    <ol id="directions-list" class="direction-list"></ol>
+  </div>
+</div>
+
+  <ol id="directions-list" class="direction-list"></ol>
+
 
     <button class="submit-btn">Submit Recipe</button>
   </div>
 
-  <script>
-    function addIngredient() {
-      const input = document.getElementById("ingredient-input");
-      const ingredient = input.value.trim();
+<script>
+  function addIngredient() {
+    const input = document.getElementById("ingredient-input");
+    const ingredient = input.value.trim();
 
-      if (ingredient === "") {
-        alert("Please enter an ingredient.");
-        return;
-      }
-
-      const list = document.getElementById("ingredients-list");
-      const li = document.createElement("li");
-      li.textContent = ingredient;
-      list.appendChild(li);
-
-      input.value = "";
-      input.focus();
+    if (ingredient === "") {
+      alert("Please enter an ingredient.");
+      return;
     }
-  </script>
+
+    const list = document.getElementById("ingredients-list");
+    const li = document.createElement("li");
+    li.textContent = ingredient;
+    list.appendChild(li);
+
+    input.value = "";
+    input.focus();
+  }
+
+  function addDirection() {
+    const input = document.getElementById("direction-input");
+    const direction = input.value.trim();
+
+    if (direction === "") {
+      alert("Please enter a direction step.");
+      return;
+    }
+
+    const list = document.getElementById("directions-list");
+    const li = document.createElement("li");
+    li.textContent = direction;
+    list.appendChild(li);
+
+    input.value = "";
+    input.focus();
+  }
+</script>
+
 
 </body>
 </html>
