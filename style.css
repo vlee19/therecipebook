@@ -185,6 +185,11 @@ nav li:first-child{
   background-color: unset;
   border: none;
 }
+.header-profile-star{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .wrap{
   display: block;
   object-fit: cover;
