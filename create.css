@@ -180,14 +180,6 @@ nav li:first-child{
   object-fit: cover;
   overflow: hidden;
 }
-.churrasco-image{
-  width: 40%;
-  height: 100%;
-  margin: -250px 0px -150px 0px;
-}
-.recipe-icons{
-  width: 2px;
-}
 
 /* New stuff starts here */
 .recipe-form {

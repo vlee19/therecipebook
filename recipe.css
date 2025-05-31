@@ -241,21 +241,29 @@ nav li:first-child{
   align-items: center;
   text-align: center;
   font-size: 18px;
+  padding-top: 20px;
 }
 .recipe-sections{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch; 
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 20px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+.ingredients, .directions{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .ingredients{
   flex: 1;
   min-width: 250px;
+  padding-left: 100px;
 }
 .ingredients h2,.directions h2{
   font-size: 36px;
@@ -263,15 +271,20 @@ nav li:first-child{
 .ingredients h3{
   font-size: 22px;
 }
+.ingredients h3:not(:first-child),.directions li:not(:first-child){
+  padding-top: 20px;
+}
 .ingredients li{
-  font-size: 17px;
+  font-size: 20px;
   list-style-type: none;
   padding-left: 15px;
 }
 .ingredients .header{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 .component,.complete{
   display: none;
@@ -283,18 +296,38 @@ nav li:first-child{
   flex: 1;
   min-width: 300px;
   max-width: 500px;
-  padding-right: 500px;
   word-wrap: break-word;
+  padding-top: 33px;
+  padding-right: 90px;
+  gap: 53px;
 }
 .directions ol{
-  font-size: 17px;
+  font-size: 20px;
   padding-left: 14px;
 }
 .divider{
-  width: 2px;
+  width: 1px;
   background-color: #000;
   height: auto;
-  margin: 0px 30px;
+  align-self: stretch;
+  margin-right: 41px;
+}
+.buttons{
+  gap: 8px;
+}
+button{
+  margin-top: 20px;
+  width: 100%;
+  background-color: #a88269;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #68503f;
 }
 /*
 .kanit-thin {
