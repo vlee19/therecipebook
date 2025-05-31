@@ -1,24 +1,73 @@
+const categories = {};
+
 function addIngredient() {
-    const input = document.getElementById("ingredient-input");
-    const ingredient = input.value.trim();
+  const categoryInput = document.getElementById("ingredient-category");
+  const ingredientInput = document.getElementById("ingredient-input");
+  const category = categoryInput.value.trim();
+  const ingredient = ingredientInput.value.trim();
 
-    if (ingredient === "") {
-      alert("Please enter an ingredient.");
-      return;
-    }
-
-    const list = document.getElementById("ingredients-list");
-    const li = document.createElement("li");
-    li.innerHTML = `
-      <span>${ingredient}</span>
-      <button onclick="editItem(this)">Edit</button>
-      <button onclick="deleteItem(this)">Delete</button>
-    `;
-    list.appendChild(li);
-
-    input.value = "";
-    input.focus();
+  if (!category || !ingredient) {
+    alert("Please provide both a category and an ingredient.");
+    return;
   }
+
+  if (!categories[category]) {
+    categories[category] = [];
+  }
+
+  categories[category].push(ingredient);
+  renderIngredients();
+
+  // Reset inputs
+  ingredientInput.value = "";
+  ingredientInput.focus();
+}
+
+function renderIngredients() {
+  const container = document.getElementById("categorized-ingredients");
+  container.innerHTML = "";
+
+  for (const [category, ingredients] of Object.entries(categories)) {
+    const section = document.createElement("div");
+    section.classList.add("ingredient-category");
+
+    const title = document.createElement("h4");
+    title.textContent = category;
+    section.appendChild(title);
+
+    const list = document.createElement("ul");
+    ingredients.forEach((ingredient, index) => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <span>${ingredient}</span>
+        <button onclick="editIngredient('${category}', ${index})">Edit</button>
+        <button onclick="deleteIngredient('${category}', ${index})">Delete</button>
+      `;
+      list.appendChild(li);
+    });
+
+    section.appendChild(list);
+    container.appendChild(section);
+  }
+}
+
+function deleteIngredient(category, index) {
+  categories[category].splice(index, 1);
+  if (categories[category].length === 0) {
+    delete categories[category];
+  }
+  renderIngredients();
+}
+
+function editIngredient(category, index) {
+  const current = categories[category][index];
+  const updated = prompt("Edit ingredient:", current);
+  if (updated && updated.trim() !== "") {
+    categories[category][index] = updated.trim();
+    renderIngredients();
+  }
+}
+
 
   function addDirection() {
     const input = document.getElementById("direction-input");
@@ -77,3 +126,21 @@ function addIngredient() {
     preview.appendChild(img);
   }
 }
+document.addEventListener('DOMContentLoaded', function () {
+      const cultureSelect = document.getElementById('recipe-culture');
+      const choices = new Choices(cultureSelect, {
+        removeItemButton: true,
+        placeholderValue: 'Select one or more cultures',
+        searchPlaceholderValue: 'Search cultures'
+      });
+      
+      const tagInput = new Choices('#recipe-tags', {
+        removeItemButton: true,
+        placeholderValue: 'Add tags (e.g., meat, vegan, spicy)',
+        duplicateItemsAllowed: false,
+        addItems: true,
+        paste: true,
+        duplicateItems: false,
+        addItemFilter: value => !!value.trim(),
+      });
+});
