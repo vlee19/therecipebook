@@ -220,6 +220,7 @@ nav li:first-child{
   gap: 40px; /* space between tabs */
   margin-bottom: 0px; /* space below the tabs */
 }
+
 .profile-tabs button {
   padding: 10px 20px;
   font-size: 16px;
@@ -227,7 +228,14 @@ nav li:first-child{
   background-color: #f0f0f0;
   border: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
+
+.profile-tabs button.active {
+  background-color: #ccc; /* darker to show active state */
+  font-weight: bold;
+}
+
 .profile-rating-container .star {
   color: gold;           /* example style */
   font-size: 16px;       /* or whatever you want */
