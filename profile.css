@@ -192,6 +192,8 @@ nav li:first-child{
   width: 400px;
   height: 300px;
   padding: 0px 0px;
+  outline: black 1px solid;
+  border-radius: 5px;
 }
 .profile-rating-container {
   display: flex;
