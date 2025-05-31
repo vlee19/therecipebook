@@ -177,14 +177,15 @@ nav li:first-child{
 .header-profile {
   display: flex ;
   align-items: center;       
-  gap: 100px;                 
+  gap: 50px;                 
   background-color: #a88269;
   padding: 20px;
-  border-radius: 1px;
+  border-radius: 5px;
   border: 2px solid #444;
   max-width: 100%;
   margin-bottom: 20px;
   margin-top: 0px;
+  margin-left: 1px;
   padding-left: 200px
 }
 #TheGatorBites{
