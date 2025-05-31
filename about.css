@@ -27,12 +27,12 @@ h6{
   font-weight: 100;
 }
 p{
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #logo{
-  width: 42px;
-  padding: 0px 2px;
+  width: 37px;
+  padding-right: 10px;
 }
 .overlay{
   position: fixed;
@@ -50,27 +50,21 @@ p{
   opacity: 1;
   pointer-events: all;
 }
-.off-screen-menu{
-  position: sticky;
-  top: 0;
-  width: 100%;
+nav{
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-nav{
-  background-color: #aa8b76;
-}
-nav ul, .off-screen-menu{
+nav ul{
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-nav li,.off-screen-menu li{
+nav li{
   height: 50px;
 }
-nav a, .off-screen-menu a{
+nav a{
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
@@ -80,8 +74,8 @@ nav a, .off-screen-menu a{
   font-size: 45px;
   font-weight: 200;
 }
-nav a:hover, .off-screen-menu a:hover{
-  background-color: #91725d;
+nav a:hover{
+  background-color: #f0f0f0;
 }
 nav li:first-child{
   margin-right: auto;
@@ -120,7 +114,7 @@ nav li:first-child{
   left: 0;
   height: 100vh;
   width: 466px;
-  background-color: #aa8b76a6;
+  background-color: rgba(255, 255, 255, 0.768);
   backdrop-filter: blur(10px); 
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-101%);
@@ -133,7 +127,7 @@ nav li:first-child{
 .search-bar{
   width: 100%;
   max-width: 570px;
-  background: rgba(238, 236, 236, 0.2);
+  background: rgba(186, 184, 184, 0.2);
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -153,11 +147,11 @@ nav li:first-child{
   outline: none;
   font-size: 20px;
   padding-left: 10px;
-  color: #6f5444;
+  color: black;
   line-height: 1.1;
 }
 ::placeholder{
-  color: #967661;
+  color: rgb(192, 191, 191);
 }
 .search-bar svg{
   border: none;
@@ -171,169 +165,35 @@ nav li:first-child{
   display: none;
 }
 #clear:hover{
-  background-color: #97766091;
+  background-color: rgba(221, 221, 221, 0.693);
   border-radius: 20px;
-  box-shadow: 0 0 0 2px #97766091;
+  box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
 }
-
-
-.header-welcome {
-  color: #fff;
-  background-image: url("images/food_background.jpg");
-  background-size: cover;
-  background-position-y: -170px;
-  background-repeat: no-repeat;
-  padding: 100px;
-  text-align: center;
-  max-width: 100%;
-  margin-bottom: 20px;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.recipePic-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  max-width: 1000px;
-  margin: 0 auto 30px auto; /* center the row and add bottom spacing */
-}
-.section{
-  position: relative;
-  align-items: center;
-  margin: 0 auto 30px auto;
-  max-width: 1100px;
-}
-.section button{
-  position: absolute;
-  top: 36%;
-  cursor: pointer;
-  z-index: 1;
-}
-.section #left{
-  left: -50px;
-}
-.section #right{
-  left: 1070px;
-}
-.section svg{
-  fill: #7e7c7c8b;
-}
-.section svg:hover{
-  fill: #585757;
-}
-h2{
-  font-size: 64px;
-}
-h3{
-  font-size: 40px;
-}
-p{
-  font-size: 20px;
-}
-.sub-header{
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.recipePic {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.recipePic img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  background-color: #d8cdbb;
-  border: 2px solid #333;
-  border-radius: 6px;
-}
-
-.recipePic-caption {
-  margin-top: 8px;
-  font-size: 14px;
-  color: #333;
-}
- .image-grid {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
-  gap: 30px; /* spacing between cards */
-  padding: 20px;
-  max-width: 1000px;
-  height: fit-content; /* adjust height based on content */
-  margin: 20px auto 0 auto; /* center the grid and add spacing */
-}
-
-.image-card {
-  position: relative;
-  width: 293px;
-  height: 218px;            
-  aspect-ratio: 4 / 3;     /* keeps image height proportional */
-  background: url(image.png);
-  background-size: cover;
-  background-position: center;
-}
-.image-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-  padding-top: 13px;
-}
-.image-card {
-  transition: filter 0s;
-}
-.image-caption {
-  margin-top: 8px;
-  font-size: 16px;
-  color: #000000;
-  padding-bottom: 9px;
-  font-size: 17px;
-}
-.image-item:hover{
-  cursor: pointer;
-  background-color: #b5b2b282;
-  filter: brightness(60%);
-}
-.content h3{
-  padding-left: 40px;
-}
-.caption{
-  padding-left: 40px;
-}
-button{
+.star{
+  font-size: 1.5rem;
+  color: #ff9800;
+  background-color: unset;
   border: none;
-  justify-content: center;
-  padding-right: 80px;
-  margin-top: 1px;
-  cursor: pointer;
-  height: 40px;
-  width: 40px;
-  background-color: #f3efef00;
-  transform: translateX(0%);
-  transition: transform .3s ease;
 }
-.hitbox:hover button{
-  transform: translateX(30%);
+.wrap{
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
 }
-.hitbox{
-  display: inline-flex;
-  justify-content: center;
-  padding-left: 20px; 
+/*
+li button {
+  margin-left: 10px;
+  background: none;
+  border: none;
   cursor: pointer;
-  margin-top: 10px;
-  cursor: pointer;
-  height: 40px;
-  width: 40px;
-  background-color: #75202000;
+  font-size: 1rem;
 }
+
+li button:hover {
+  opacity: 0.7;
+}
+*/
+
 /*
 .kanit-thin {
   font-family: "Kanit", sans-serif;
