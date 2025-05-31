@@ -50,8 +50,15 @@ p{
   opacity: 1;
   pointer-events: all;
 }
+nav{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
 
-.off-screen-menu{
+nav{
   position: sticky;
   top: 0;
   width: 100%;
