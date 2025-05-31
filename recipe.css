@@ -177,6 +177,8 @@ nav li:first-child{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .title{
   display: flex;
@@ -190,6 +192,31 @@ nav li:first-child{
 .title h4{
   font-size: 20px;
   padding-left: 35px;
+}
+.info-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.tag-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  padding-top: 10px;
+  max-width: 400px;
+  max-height: 40px;
+  padding-top: 60px;
+}
+.tag{
+  background-color: #ececec;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  white-space: nowrap;
 }
 .flag{
   width: 350px;
