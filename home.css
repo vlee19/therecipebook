@@ -188,7 +188,8 @@ nav li:first-child{
   max-width: 100%;
   margin-bottom: 20px;
   margin-top: 0px;
-  margin-left: 2px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .recipePic-row {
   display: grid;

@@ -196,9 +196,23 @@ nav li:first-child{
 .profile-rating-container {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* space between lines (optional) */
-  font-size: small;
+  gap: 10px;
+  font-size: 24px; /* Try increasing this safely */
+  max-width: 100%; /* Ensure container isn’t constraining width */
 }
+
+.ratings {
+  white-space: nowrap;       /* Prevents wrapping */
+  display: inline-block;     /* Keeps each rating on one line */
+}
+
+.star {
+  color: gold;
+  font-size: 1em;            /* Relative to parent font size */
+  padding-left: 4px;
+  vertical-align: middle;
+}
+
 .title-row {
   display: flex;
   align-items: center;
@@ -240,11 +254,6 @@ nav li:first-child{
   font-weight: bold;
 }
 
-.profile-rating-container .star {
-  color: gold;           /* example style */
-  font-size: 24px;       /* or whatever you want */
-  padding-left: 4px;
-}
 
 /* Shared styles for all image cards */
 .image-grid {
