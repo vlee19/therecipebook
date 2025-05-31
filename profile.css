@@ -305,7 +305,13 @@ nav li:first-child{
   cursor: pointer;
   background-color: #9b9696;
 }
-
+.flags{
+  display: flex;
+  gap: 15px;
+}
+.flags img{
+  height: 40px;
+}
 .profile-tabs button:hover{
   background-color: #8d8c8c;
 }
