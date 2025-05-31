@@ -133,4 +133,14 @@ document.addEventListener('DOMContentLoaded', function () {
         placeholderValue: 'Select one or more cultures',
         searchPlaceholderValue: 'Search cultures'
       });
+      
+      const tagInput = new Choices('#recipe-tags', {
+        removeItemButton: true,
+        placeholderValue: 'Add tags (e.g., meat, vegan, spicy)',
+        duplicateItemsAllowed: false,
+        addItems: true,
+        paste: true,
+        duplicateItems: false,
+        addItemFilter: value => !!value.trim(),
+      });
 });

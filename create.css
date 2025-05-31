@@ -199,7 +199,7 @@ nav li:first-child{
 .recipe-body {
   display: flex;
   gap: 40px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .ingredients-section,
@@ -247,19 +247,33 @@ nav li:first-child{
   list-style-type: disc;
 }
 
-
 .add-btn {
-  background-color: #28a745;
-  border: none;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  color: #333;
+  border-radius: 4px;
   cursor: pointer;
+  gap: 4px;
+  transition: background-color 0.2s ease;
 }
 
 .add-btn:hover {
-  background-color: #218838;
+  background-color: #e2e2e2;
 }
+
+.plus-sign {
+  font-weight: bold;
+  color: #333;
+}
+
+.add-text {
+  font-weight: normal;
+}
+
 
 .ingredient-list {
   margin-top: 10px;
@@ -270,8 +284,25 @@ nav li:first-child{
 .submit-btn {
   margin-top: 20px;
   width: 20%;
-  background-color: #007bff;
+  background-color: #af5e00;
   color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 540px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #7b4100;
+}
+
+.save-btn {
+  margin-top: 20px;
+  width: 20%;
+  background-color: #af5e00;
+  color: rgb(255, 255, 255);
   padding: 8px;
   border: none;
   border-radius: 5px;
@@ -279,9 +310,10 @@ nav li:first-child{
   cursor: pointer;
 }
 
-.submit-btn:hover {
-  background-color: #0056b3;
+.save-btn:hover {
+  background-color: #7b4100;
 }
+
 .back-btn{
   margin-top: 20px;
   width: 20%;
@@ -356,6 +388,11 @@ input[type="text"] {
   flex: 1;
   min-width: 200px;
 }
+#recipe-tags {
+  width: 100%;
+  margin-top: 10px;
+}
+
 
 /*
 li button {

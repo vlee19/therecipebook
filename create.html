@@ -30,19 +30,23 @@
   <div class="field">
       <label for="recipe-culture">Select Culture(s)</label>
       <select id="recipe-culture" multiple>
-        <option value="mexican">🇲🇽 Mexican</option>
-        <option value="italian">🇮🇹 Italian</option>
-        <option value="japanese">🇯🇵 Japanese</option>
-        <option value="indian">🇮🇳 Indian</option>
-        <option value="french">🇫🇷 French</option>
-        <option value="thai">🇹🇭 Thai</option>
-        <option value="korean">🇰🇷 Korean</option>
-        <option value="american">🇺🇸 American</option>
-        <option value="chinese">🇨🇳 Chinese</option>
-        <option value="brazilian">🇧🇷 Brazilian</option>
+        <option value="american">American</option>
+        <option value="brazilian">Brazilian</option>
+        <option value="chinese">Chinese</option>
+        <option value="french">French</option>
+        <option value="indian">Indian</option>
+        <option value="italian">Italian</option>
+        <option value="japanese">Japanese</option>
+        <option value="korean">Korean</option>
+        <option value="mexican">Mexican</option>
+        <option value="thai">Thai</option>
       </select>
-  </div>
+      
+      <label for="recipe-tags">Tags</label>
+      <input type="text" id="recipe-tags" placeholder="Add tags like meat, spicy, vegan" />
 
+  </div>
+  
   <label for="recipe-photo">Upload a Photo</label>
   <input type="file" id="recipe-photo" accept="image/*" onchange="previewPhoto(event)">
   <div id="photo-preview" class="center-photo-preview" style="margin-top: 10px;"></div>
@@ -51,12 +55,14 @@
   <textarea id="recipe-description" rows="4" placeholder="Describe your recipe..." required></textarea>
 
   <div class="recipe-body">
-  
     <div class="ingredients-section">
       <label for="ingredient-input">Add Ingredient</label>
       <div class="ingredient-controls">
         <input type="text" id="ingredient-input" placeholder="e.g., 1 lb skirt steak">
-        <button type="button" class="add-btn" onclick="addIngredient()">+ Add</button>
+        <button type="button" class="add-btn" onclick="addIngredient()">
+          <span class="plus-sign">+</span> <span class="add-text">Add</span>
+        </button>
+
       </div>
 
       <label for="ingredient-category">Ingredient Category</label>
@@ -67,12 +73,13 @@
       <div id="categorized-ingredients" class="ingredient-list"></div>
     </div>
 
-
     <div class="directions-section">
       <label for="direction-input">Add Direction</label>
       <div class="direction-controls">
         <input type="text" id="direction-input" placeholder="e.g., Set the grill to 450°F">
-        <button type="button" class="add-btn" onclick="addDirection()">+ Add</button>
+        <button type="button" class="add-btn" onclick="addDirection()">
+          <span class="plus-sign">+</span> <span class="add-text">Add</span>
+        </button>
       </div>
       <ol id="directions-list" class="direction-list"></ol>
     </div>
@@ -81,6 +88,7 @@
     <ol id="directions-list" class="direction-list"></ol>
 
     <button onclick="backToProfile()" class="back-btn">Back to Profile</button>
+    <button class="save-btn" onclick="saveRecipe()">Save</button>
     <button class="submit-btn">Submit Recipe</button>
   </div>
   
