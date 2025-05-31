@@ -58,7 +58,13 @@ p{
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   background-color: #aa8b76;
+  z-index: 998;
 }
 nav ul, .off-screen-menu{
   width: 100%;
