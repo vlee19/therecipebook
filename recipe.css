@@ -277,7 +277,12 @@ nav li:first-child{
 .ingredients li{
   font-size: 20px;
   list-style-type: none;
+}
+.ingredients .component li{
   padding-left: 15px;
+}
+.complete{
+  padding-top: 4px;
 }
 .ingredients .header{
   display: flex;
@@ -297,7 +302,7 @@ nav li:first-child{
   min-width: 300px;
   max-width: 500px;
   word-wrap: break-word;
-  padding-top: 33px;
+  padding-top: 32px;
   padding-right: 90px;
   gap: 53px;
 }
