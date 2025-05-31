@@ -308,6 +308,7 @@ nav li:first-child{
 .flags{
   display: flex;
   gap: 15px;
+  padding-bottom: 10px;
 }
 .flags img{
   height: 40px;
