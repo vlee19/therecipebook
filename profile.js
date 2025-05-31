@@ -3,14 +3,8 @@ const menuButton = document.querySelector('[onclick="showSidebar()"]');
 const searchInput = document.getElementById('search');
 const clear = document.getElementById('clear');
 const overlay = document.querySelector('.overlay');
-const componentBtn = document.querySelector('[onclick="showByComponent()"]');
-const completeBtn = document.querySelector('[onclick="showFullList()"]');
-const component = document.querySelector('.component');
-const complete = document.querySelector('.complete');
 const recipeBtn = document.querySelector('[onclick="showRecipe]');
-
-
-const createBtn = document.querySelector('[onclick="showCreate()"]');
+const createBtn = document.querySelector('[onclick="showCreate]');
 
 function showSidebar(event){
   event.preventDefault();
@@ -60,4 +54,10 @@ function showTab(tabId) {
       btn.classList.add('active');
     }
   });
+}
+function showCreate(){
+  window.location.href = 'create.html';
+}
+function showRecipe(){
+  window.location.href = 'recipe.html';
 }
