@@ -197,6 +197,7 @@ nav li:first-child{
   display: flex;
   flex-direction: column;
   gap: 10px; /* space between lines (optional) */
+  font-size: small;
 }
 .title-row {
   display: flex;
@@ -210,8 +211,11 @@ nav li:first-child{
 
 .title-row button {
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
+  background-color: #f0f0f0;
+  border: black 1px solid;
+  border-radius: 5px;
   background-color: #f0f0f0;
 }
 .profile-tabs {
@@ -238,7 +242,7 @@ nav li:first-child{
 
 .profile-rating-container .star {
   color: gold;           /* example style */
-  font-size: 16px;       /* or whatever you want */
+  font-size: 24px;       /* or whatever you want */
   padding-left: 4px;
 }
 
@@ -286,6 +290,14 @@ nav li:first-child{
 .profile-tabs button:hover{
   background-color: #8d8c8c;
 }
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
 /*
 .kanit-thin {
   font-family: "Kanit", sans-serif;
