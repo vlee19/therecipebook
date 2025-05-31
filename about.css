@@ -31,7 +31,7 @@ p{
 }
 
 #logo{
-  width: 42px;
+  width: 37px;
   padding-right: 10px;
 }
 .overlay{
@@ -51,23 +51,20 @@ p{
   pointer-events: all;
 }
 nav{
-  position: sticky;
-  top: 0;
-  width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-nav ul, .off-screen-menu{
+nav ul{
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-nav li,.off-screen-menu li{
+nav li{
   height: 50px;
 }
-nav a, .off-screen-menu a{
+nav a{
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
@@ -77,7 +74,7 @@ nav a, .off-screen-menu a{
   font-size: 45px;
   font-weight: 200;
 }
-nav a:hover, .off-screen-menu a:hover{
+nav a:hover{
   background-color: #f0f0f0;
 }
 nav li:first-child{
@@ -172,231 +169,31 @@ nav li:first-child{
   border-radius: 20px;
   box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
 }
-
-.recipe-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.title{
-  display: flex;
-  flex-direction: column;
-}
-.title h2{
-  font-size: 64px;
-  margin: 0;
-  padding-left: 30px;
-}
-.title h4{
-  font-size: 20px;
-  padding-left: 35px;
-}
-.info-block{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex: 1;
-  flex-wrap: wrap;
-}
-.tag-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  align-items: center;
-  padding-top: 10px;
-  max-width: 400px;
-  max-height: 40px;
-  padding-top: 70px;
-}
-.tag{
-  background-color: #ececec;
-  color: #333;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 17px;
-  white-space: nowrap;
-}
-.flag{
-  width: 350px;
-  padding-right: 35px;
-}
-.sub-header{
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
-}
-.sub-header .star{
-  font-size: 60px;
+.star{
+  font-size: 1.5rem;
   color: #ff9800;
   background-color: unset;
   border: none;
 }
 .wrap{
-  display: flex;
+  display: block;
   object-fit: cover;
   overflow: hidden;
-  justify-content: center;
 }
-.churrasco-image{
-  display: block;
-  object-fit: cover;
-  width: 50%;
-  height: 460px;
-  margin: auto;
-  border-radius: 20px;
-}
-.sub-header{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.sub-header svg{
-  width: 60px;
-}
-.info{
-  font-size: 23px;
-}
-.servings,.time{
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-}
-.description{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
-  padding-top: 20px;
-}
-.recipe-sections{
-  display: flex;
-  justify-content: center;
-  align-items: stretch; 
-  gap: 40px;
-  flex-wrap: nowrap;
-  padding: 20px;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-.ingredients, .directions{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.ingredients{
-  flex: 1;
-  min-width: 250px;
-  padding-left: 192px;
-}
-.ingredients h2,.directions h2, .comments h2{
-  font-size: 36px;
-}
-.ingredients h3{
-  font-size: 22px;
-}
-.ingredients h3:not(:first-child),.directions li:not(:first-child){
-  padding-top: 20px;
-}
-.ingredients li{
-  font-size: 20px;
-  list-style-type: none;
-}
-.ingredients .component li{
-  padding-left: 15px;
-}
-.complete{
-  padding-top: 4px;
-}
-.ingredients .header{
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-.component,.complete{
-  display: none;
-}
-.component.active,.complete.active{
-  display: block;
-} 
-.directions{
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
-  word-wrap: break-word;
-  padding-top: 32px;
-  padding-right: 90px;
-  gap: 53px;
-}
-.directions ol{
-  font-size: 20px;
-  padding-left: 14px;
-}
-.divider{
-  width: 1px;
-  background-color: #000;
-  height: auto;
-  align-self: stretch;
-  margin-right: 41px;
-}
-button{
-  margin-top: 20px;
-  width: 100%;
-  background-color: #a88269;
-  color: white;
-  padding: 8px;
+/*
+li button {
+  margin-left: 10px;
+  background: none;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
+  font-size: 1rem;
 }
-button:hover{
-  background-color: #68503f;
+
+li button:hover {
+  opacity: 0.7;
 }
-.comments{
-  padding-left: 20px;
-}
-.profile-icon{
-  position: relative;
-  width: 50px;
-  height: 50px;
-}
-.person{
-  background-color: #8e878288;
-  border-radius: 40px;
-}
-.chef-hat{
-  position: absolute;
-  top: -20px;
-  left: -10px;
-  transform: rotate(-32deg);
-  z-index: 2;
-}
-.profile-comment{
-  display: flex;
-  align-items: center;
-  padding-left: 40px;
-}
-.profile-text{
-  padding-left: 15px;
-}
-.profile-comment h3{
-  font-size: 20px;
-}
-.profile-comment h4{
-  font-size: 20px;
-}
-.stars{
-  font-size: 20px;
-  color: #ff9800;
-  background-color: unset;
-  border: none;
-}
+*/
+
 /*
 .kanit-thin {
   font-family: "Kanit", sans-serif;

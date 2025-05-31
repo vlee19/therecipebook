@@ -58,7 +58,7 @@ p{
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav{
-  background-color: #a88269;
+  background-color: #aa8b76;
 }
 nav ul, .off-screen-menu{
   width: 100%;
@@ -81,7 +81,7 @@ nav a, .off-screen-menu a{
   font-weight: 200;
 }
 nav a:hover, .off-screen-menu a:hover{
-  background-color: #f0f0f0;
+  background-color: #91725d;
 }
 nav li:first-child{
   margin-right: auto;
@@ -120,7 +120,7 @@ nav li:first-child{
   left: 0;
   height: 100vh;
   width: 466px;
-  background-color: rgba(255, 255, 255, 0.562);
+  background-color: #aa8b76a6;
   backdrop-filter: blur(10px); 
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-101%);
@@ -171,9 +171,9 @@ nav li:first-child{
   display: none;
 }
 #clear:hover{
-  background-color: rgba(221, 221, 221, 0.693);
+  background-color: #97766091;
   border-radius: 20px;
-  box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
+  box-shadow: 0 0 0 2px #97766091;
 }
 
 
@@ -199,6 +199,30 @@ nav li:first-child{
   max-width: 1000px;
   margin: 0 auto 30px auto; /* center the row and add bottom spacing */
 }
+.section{
+  position: relative;
+  align-items: center;
+  margin: 0 auto 30px auto;
+  max-width: 1100px;
+}
+.section button{
+  position: absolute;
+  top: 36%;
+  cursor: pointer;
+  z-index: 1;
+}
+.section #left{
+  left: -50px;
+}
+.section #right{
+  left: 1070px;
+}
+.section svg{
+  fill: #7e7c7c8b;
+}
+.section svg:hover{
+  fill: #585757;
+}
 h2{
   font-size: 64px;
 }
@@ -210,7 +234,8 @@ p{
 }
 .sub-header{
   display: flex;
-  gap: 40px;
+  gap: 10px;
+  align-items: center;
 }
 .recipePic {
   display: flex;
@@ -282,6 +307,32 @@ p{
 }
 .caption{
   padding-left: 40px;
+}
+button{
+  border: none;
+  justify-content: center;
+  padding-right: 80px;
+  margin-top: 1px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-color: #f3efef00;
+  transform: translateX(0%);
+  transition: transform .3s ease;
+}
+.hitbox:hover button{
+  transform: translateX(30%);
+}
+.hitbox{
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 20px; 
+  cursor: pointer;
+  margin-top: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-color: #75202000;
 }
 /*
 .kanit-thin {
