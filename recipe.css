@@ -245,10 +245,13 @@ nav li:first-child{
 .recipe-sections{
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; 
+  align-items: stretch; 
   gap: 40px;
   flex-wrap: wrap;
   padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .ingredients{
   flex: 1;
@@ -287,7 +290,12 @@ nav li:first-child{
   font-size: 17px;
   padding-left: 14px;
 }
-
+.divider{
+  width: 2px;
+  background-color: #000;
+  height: auto;
+  margin: 0px 30px;
+}
 /*
 .kanit-thin {
   font-family: "Kanit", sans-serif;
