@@ -42,73 +42,7 @@
     <button onclick="backToProfile()" class="back-btn">Back to Profile</button>
   </div>
 
-<script>
-  function addIngredient() {
-    const input = document.getElementById("ingredient-input");
-    const ingredient = input.value.trim();
-
-    if (ingredient === "") {
-      alert("Please enter an ingredient.");
-      return;
-    }
-
-    const list = document.getElementById("ingredients-list");
-    const li = document.createElement("li");
-    li.innerHTML = `
-      <span>${ingredient}</span>
-      <button onclick="editItem(this)">Edit</button>
-      <button onclick="deleteItem(this)">Delete</button>
-    `;
-    list.appendChild(li);
-
-    input.value = "";
-    input.focus();
-  }
-
-  function addDirection() {
-    const input = document.getElementById("direction-input");
-    const direction = input.value.trim();
-
-    if (direction === "") {
-      alert("Please enter a direction.");
-      return;
-    }
-
-    const list = document.getElementById("directions-list");
-    const li = document.createElement("li");
-    li.innerHTML = `
-      <span>${direction}</span>
-      <button onclick="editItem(this)">Edit</button>
-      <button onclick="deleteItem(this)">Delete</button>
-    `;
-    list.appendChild(li);
-
-    input.value = "";
-    input.focus();
-  }
-
-  function deleteItem(button) {
-    const li = button.parentElement;
-    li.remove();
-  }
-
-  function editItem(button) {
-    const li = button.parentElement;
-    const span = li.querySelector("span");
-    const currentText = span.textContent;
-    const newText = prompt("Edit text:", currentText);
-    if (newText !== null && newText.trim() !== "") {
-      span.textContent = newText.trim();
-    }
-  }
-
-  const backBtn = document.querySelector('[onclick="backToProfile()"]');
-  function backToProfile(){
-    window.location.href = 'profile.html';
-  }
-</script>
-
-
+<script src="create.js"></script>
 
 </body>
 </html>
