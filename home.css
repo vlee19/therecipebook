@@ -27,7 +27,7 @@ h6{
   font-weight: 100;
 }
 p{
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #logo{
@@ -50,13 +50,15 @@ p{
   opacity: 1;
   pointer-events: all;
 }
-
 .off-screen-menu{
   position: sticky;
   top: 0;
   width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav{
+  background-color: #a88269;
 }
 nav ul, .off-screen-menu{
   width: 100%;
@@ -118,7 +120,7 @@ nav li:first-child{
   left: 0;
   height: 100vh;
   width: 466px;
-  background-color: rgba(255, 255, 255, 0.768);
+  background-color: rgba(255, 255, 255, 0.562);
   backdrop-filter: blur(10px); 
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-101%);
@@ -131,7 +133,7 @@ nav li:first-child{
 .search-bar{
   width: 100%;
   max-width: 570px;
-  background: rgba(186, 184, 184, 0.2);
+  background: rgba(238, 236, 236, 0.2);
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -151,11 +153,11 @@ nav li:first-child{
   outline: none;
   font-size: 20px;
   padding-left: 10px;
-  color: black;
+  color: #6f5444;
   line-height: 1.1;
 }
 ::placeholder{
-  color: rgb(192, 191, 191);
+  color: #967661;
 }
 .search-bar svg{
   border: none;
@@ -176,10 +178,12 @@ nav li:first-child{
 
 
 .header-welcome {
-  background-color: #a88269;
-  padding: 20px;
-  border-radius: 1px;
-  border: 2px solid #444;
+  color: #fff;
+  background-image: url("images/food_background.jpg");
+  background-size: cover;
+  background-position-y: -170px;
+  background-repeat: no-repeat;
+  padding: 100px;
   text-align: center;
   max-width: 100%;
   margin-bottom: 20px;
@@ -193,7 +197,19 @@ nav li:first-child{
   max-width: 1000px;
   margin: 0 auto 30px auto; /* center the row and add bottom spacing */
 }
-
+h2{
+  font-size: 64px;
+}
+h3{
+  font-size: 40px;
+}
+p{
+  font-size: 20px;
+}
+.sub-header{
+  display: flex;
+  gap: 40px;
+}
 .recipePic {
   display: flex;
   flex-direction: column;
@@ -234,24 +250,29 @@ nav li:first-child{
   background: url(image.png);
   background-size: cover;
   background-position: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
 }
 .image-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
 }
-
+.image-card {
+  transition: filter 0s;
+}
 .image-caption {
   margin-top: 8px;
   font-size: 16px;
   color: #000000;
+  padding-bottom: 9px;
+  font-size: 17px;
 }
-.recipePic-row img:hover{
+.image-item:hover{
   cursor: pointer;
-  background-color: #9b9696;
+  background-color: #b5b2b282;
+  filter: brightness(60%);
 }
 .content h3{
   padding-left: 40px;
