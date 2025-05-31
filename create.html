@@ -9,8 +9,28 @@
   <div class="recipe-form">
     <h1>Create a Recipe</h1>
 
+    <div class="recipe-top-row">
+  <div class="field">
     <label for="recipe-name">Recipe Name</label>
     <input type="text" id="recipe-name" placeholder="e.g., Churrasco con Arroz" required>
+  </div>
+
+  <div class="field">
+    <label for="serving-size">Serving Size</label>
+    <input type="text" id="serving-size" placeholder="e.g., 4 servings">
+  </div>
+
+  <div class="field">
+    <label for="prep-time">Time to Make</label>
+    <input type="text" id="prep-time" placeholder="e.g., 45 minutes">
+  </div>
+</div>
+
+
+    <label for="recipe-photo">Upload a Photo</label>
+    <input type="file" id="recipe-photo" accept="image/*" onchange="previewPhoto(event)">
+    <div id="photo-preview" class="center-photo-preview" style="margin-top: 10px;"></div>
+
 
     <label for="recipe-description">Description</label>
     <textarea id="recipe-description" rows="4" placeholder="Describe your recipe..." required></textarea>
@@ -19,7 +39,7 @@
   <div class="ingredients-section">
     <label for="ingredient-input">Add Ingredient</label>
     <div class="ingredient-controls">
-      <input type="text" id="ingredient-input" placeholder="e.g., 2 cups flour">
+      <input type="text" id="ingredient-input" placeholder="e.g., 2 lbs of skirt steak">
       <button type="button" class="add-btn" onclick="addIngredient()">+ Add</button>
     </div>
     <ul id="ingredients-list" class="ingredient-list"></ul>
@@ -28,7 +48,7 @@
   <div class="directions-section">
     <label for="direction-input">Add Direction</label>
     <div class="direction-controls">
-      <input type="text" id="direction-input" placeholder="e.g., Preheat oven to 350°F">
+      <input type="text" id="direction-input" placeholder="e.g., Set the grill to 450°F">
       <button type="button" class="add-btn" onclick="addDirection()">+ Add</button>
     </div>
     <ol id="directions-list" class="direction-list"></ol>
@@ -43,6 +63,8 @@
   </div>
 
 <script src="create.js"></script>
+
+
 
 </body>
 </html>
