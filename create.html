@@ -51,14 +51,22 @@
   <textarea id="recipe-description" rows="4" placeholder="Describe your recipe..." required></textarea>
 
   <div class="recipe-body">
+  
     <div class="ingredients-section">
       <label for="ingredient-input">Add Ingredient</label>
       <div class="ingredient-controls">
-        <input type="text" id="ingredient-input" placeholder="e.g., 2 lbs of skirt steak">
+        <input type="text" id="ingredient-input" placeholder="e.g., 1 lb skirt steak">
         <button type="button" class="add-btn" onclick="addIngredient()">+ Add</button>
       </div>
-      <ul id="ingredients-list" class="ingredient-list"></ul>
+
+      <label for="ingredient-category">Ingredient Category</label>
+      <div class="ingredient-controls">
+        <input type="text" id="ingredient-category" placeholder="e.g., Steak, Rice, Sauce">
+      </div>
+
+      <div id="categorized-ingredients" class="ingredient-list"></div>
     </div>
+
 
     <div class="directions-section">
       <label for="direction-input">Add Direction</label>
@@ -72,8 +80,8 @@
 
     <ol id="directions-list" class="direction-list"></ol>
 
-    <button class="submit-btn">Submit Recipe</button>
     <button onclick="backToProfile()" class="back-btn">Back to Profile</button>
+    <button class="submit-btn">Submit Recipe</button>
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>

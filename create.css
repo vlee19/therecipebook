@@ -233,6 +233,21 @@ nav li:first-child{
   flex-grow: 1;
 }
 
+.ingredient-category {
+  margin-top: 15px;
+}
+
+.ingredient-category h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.ingredient-category ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+
 .add-btn {
   background-color: #28a745;
   border: none;
@@ -254,10 +269,10 @@ nav li:first-child{
 
 .submit-btn {
   margin-top: 20px;
-  width: 100%;
+  width: 20%;
   background-color: #007bff;
   color: white;
-  padding: 12px;
+  padding: 8px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -341,7 +356,6 @@ input[type="text"] {
   flex: 1;
   min-width: 200px;
 }
-
 
 /*
 li button {
