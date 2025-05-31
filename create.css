@@ -253,8 +253,8 @@ nav li:first-child{
   padding: 4px 8px;
   font-size: 0.85rem;
   border: 1px solid #ccc;
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: #24c400;
+  color: #ffffff;
   border-radius: 4px;
   cursor: pointer;
   gap: 4px;
@@ -262,12 +262,12 @@ nav li:first-child{
 }
 
 .add-btn:hover {
-  background-color: #e2e2e2;
+  background-color: #198700;
 }
 
 .plus-sign {
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
 }
 
 .add-text {
