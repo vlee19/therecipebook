@@ -33,9 +33,3 @@ clear.addEventListener('click', () => {
   clear.style.display = 'none';
   searchInput.focus();
 });
-function showCreate(){
-  window.location.href = 'create.html';
-}
-function showRecipe(){
-  window.location.href = 'recipe.html';
-}

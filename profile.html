@@ -39,9 +39,9 @@
         <div class="header-profile">
             
             <div class="profile-rating-container">
-            <h4 class="ratings">Authentic: 4.7 <span class="star">&#9733;</span></h4>
-            <h4 class="ratings">Yummy: 5.0 <span class="star">&#9733;</span></h4>
-            <h4 class="ratings">Clarity: 3.7 <span class="star">&#9733;</span></h4>
+            <h3 class="ratings">Authentic: 4.7 <span class="star">&#9733;</span></h4>
+            <h3 class="ratings">Yummy: 5.0 <span class="star">&#9733;</span></h4>
+            <h3 class="ratings">Clarity: 3.7 <span class="star">&#9733;</span></h4>
             </div>
 
           <img id="TheGatorBites" src="images/image.jpg" alt="TheRecipeBook">
@@ -51,7 +51,6 @@
             <button>Edit</button>
             <button onclick="showCreate()">Create Post</button>
           </div>
-          <h2>Welcome to TheRecipeBook</h2>
           A multicultural team of first/second generation 
           Americans with a passion for food and culture.
         </div>
@@ -59,38 +58,53 @@
       </div>     
         
     </div>
-    <div class="content">
-      <div class ="profile-tabs">
-        <button class="active" onclick="showTab('recipes')">Recipes</button>
-        <button onclick="showTab('reviews')">Reviews</button>
-        <button onclick="showTab('references')">References</button>
+   <div class="content">
+  <!-- Tabs -->
+  <div class="profile-tabs">
+  <button class="active" onclick="showTab('recipes')">Recipes</button>
+  <button onclick="showTab('reviews')">Reviews</button>
+  <button onclick="showTab('references')">References</button>
+</div>
+
+<div id="recipes" class="tab-content active">
+  <!-- Recipes tab content -->
+    <div class="image-grid">
+    <div class="image-item">
+      <img src="images/Chicken.png" alt="Chicken" class="image-card">
+      <p class="image-caption">Baked Chicken and Collard Greens</p>
     </div>
-   <div class="image-grid">
-      <div class="image-item">
-        <img src="images/Chicken.png" alt="Chicken" class="image-card">
-        <p class="image-caption">Baked Chicken and Collard Greens</p>
-      </div>
-      <div class="image-item">
-        <img src="images/Scampi.png" alt="Scampi" class="image-card">
-        <p class="image-caption">Scampi Di Gamberi</p>
-      </div>
-      <div class="image-item">
-        <img onclick="showRecipe()" src="images/Churrasco 2.png" alt="Churrasco" class="image-card">
-        <p class="image-caption">Churrasco Con Arroz</p>
-      </div>
-      <div class="image-item">
-        <img src="images/Hambagu.png" alt="Hambagu" class="image-card">
-        <p class="image-caption">Hambagu</p>
-      </div>
-      <div class="image-item">
-        <img src="images/Sancocho.png" alt="Sancocho" class="image-card">
-        <p class="image-caption">Sancocho Dominicano</p>
-      </div>
-      <div class="image-item">
-        <img src="images/Omelette.png" alt="Omelette" class="image-card">
-        <p class="image-caption">Omelette Roulée</p>
-      </div>
+    <div class="image-item">
+      <img src="images/Scampi.png" alt="Scampi" class="image-card">
+      <p class="image-caption">Scampi Di Gamberi</p>
     </div>
+    <div class="image-item">
+      <img onclick="showRecipe()" src="images/Churrasco 2.png" alt="Churrasco" class="image-card">
+      <p class="image-caption">Churrasco Con Arroz</p>
+    </div>
+    <div class="image-item">
+      <img src="images/Hambagu.png" alt="Hambagu" class="image-card">
+      <p class="image-caption">Hambagu</p>
+    </div>
+    <div class="image-item">
+      <img src="images/Sancocho.png" alt="Sancocho" class="image-card">
+      <p class="image-caption">Sancocho Dominicano</p>
+    </div>
+    <div class="image-item">
+      <img src="images/Omelette.png" alt="Omelette" class="image-card">
+      <p class="image-caption">Omelette Roulée</p>
+    </div>
+  </div>
+</div>
+
+<div id="reviews" class="tab-content">
+  <!-- Reviews tab content -->
+</div>
+
+<div id="references" class="tab-content">
+  <!-- References tab content -->
+</div>
+</div>
+
 
 
     
