@@ -246,12 +246,24 @@ nav li:first-child{
   display: flex;
   justify-content: space-between;
   align-items: flex-start; 
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 .ingredients{
-  padding-left: 50px;
+  flex: 1;
+  min-width: 250px;
 }
-.ingredients ul{
-  padding-left: 50px;
+.ingredients h2,.directions h2{
+  font-size: 36px;
+}
+.ingredients h3{
+  font-size: 22px;
+}
+.ingredients li{
+  font-size: 17px;
+  list-style-type: none;
+  padding-left: 15px;
 }
 .ingredients .header{
   display: flex;
@@ -265,8 +277,15 @@ nav li:first-child{
   display: block;
 } 
 .directions{
-  padding-right: 30px;
-  flex-wrap: wrap;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  padding-right: 500px;
+  word-wrap: break-word;
+}
+.directions ol{
+  font-size: 17px;
+  padding-left: 14px;
 }
 
 /*
