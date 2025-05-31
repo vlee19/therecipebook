@@ -7,10 +7,6 @@ const componentBtn = document.querySelector('[onclick="showByComponent()"]');
 const completeBtn = document.querySelector('[onclick="showFullList()"]');
 const component = document.querySelector('.component');
 const complete = document.querySelector('.complete');
-const recipeBtn = document.querySelector('[onclick="showRecipe]');
-
-
-const createBtn = document.querySelector('[onclick="showCreate()"]');
 
 function showSidebar(event){
   event.preventDefault();
@@ -48,10 +44,4 @@ function showFullList(event){
   event.preventDefault();
   complete.classList.add('active');
   component.classList.remove('active');
-}
-function showCreate(){
-  window.location.href = 'create.html';
-}
-function showRecipe(){
-  window.location.href = 'recipe.html';
 }

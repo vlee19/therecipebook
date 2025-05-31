@@ -3,14 +3,7 @@ const menuButton = document.querySelector('[onclick="showSidebar()"]');
 const searchInput = document.getElementById('search');
 const clear = document.getElementById('clear');
 const overlay = document.querySelector('.overlay');
-const componentBtn = document.querySelector('[onclick="showByComponent()"]');
-const completeBtn = document.querySelector('[onclick="showFullList()"]');
-const component = document.querySelector('.component');
-const complete = document.querySelector('.complete');
 const recipeBtn = document.querySelector('[onclick="showRecipe]');
-
-
-const createBtn = document.querySelector('[onclick="showCreate()"]');
 
 function showSidebar(event){
   event.preventDefault();
@@ -39,3 +32,6 @@ clear.addEventListener('click', () => {
   clear.style.display = 'none';
   searchInput.focus();
 });
+function showRecipe(){
+  window.location.href = 'recipe.html';
+}
