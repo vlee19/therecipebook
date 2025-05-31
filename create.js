@@ -77,3 +77,11 @@ function addIngredient() {
     preview.appendChild(img);
   }
 }
+document.addEventListener('DOMContentLoaded', function () {
+      const cultureSelect = document.getElementById('recipe-culture');
+      const choices = new Choices(cultureSelect, {
+        removeItemButton: true,
+        placeholderValue: 'Select one or more cultures',
+        searchPlaceholderValue: 'Search cultures'
+      });
+});
