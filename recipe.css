@@ -200,7 +200,7 @@ nav li:first-child{
   align-items: center;
   padding-left: 30px;
 }
-.star{
+.sub-header .star{
   font-size: 60px;
   color: #ff9800;
   background-color: unset;
@@ -263,9 +263,9 @@ nav li:first-child{
 .ingredients{
   flex: 1;
   min-width: 250px;
-  padding-left: 100px;
+  padding-left: 192px;
 }
-.ingredients h2,.directions h2{
+.ingredients h2,.directions h2, .comments h2{
   font-size: 36px;
 }
 .ingredients h3{
@@ -317,9 +317,6 @@ nav li:first-child{
   align-self: stretch;
   margin-right: 41px;
 }
-.buttons{
-  gap: 8px;
-}
 button{
   margin-top: 20px;
   width: 100%;
@@ -333,6 +330,29 @@ button{
 }
 button:hover{
   background-color: #68503f;
+}
+.comments{
+  padding-left: 20px;
+}
+.profile-comment{
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.profile-text{
+  padding-left: 15px;
+}
+.profile-comment h3{
+  font-size: 20px;
+}
+.profile-comment h4{
+  font-size: 20px;
+}
+.stars{
+  font-size: 20px;
+  color: #ff9800;
+  background-color: unset;
+  border: none;
 }
 /*
 .kanit-thin {
