@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+}
+body{
+  min-height: 100vh;
+}
+h1{
+  font-weight: 700;
+}
+h2{
+  font-weight: 600;
+}
+h3{
+  font-weight: 500;
+}
+h4{
+  font-weight: 300;
+}
+h5{
+  font-weight: 200;
+}
+h6{
+  font-weight: 100;
+}
+p{
+  font-weight: 400;
+}
+
+#logo{
+  width: 37px;
+  padding-right: 10px;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(72, 72, 72, 0.718);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+.overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 45px;
+  font-weight: 200;
+}
+nav a:hover{
+  background-color: #f0f0f0;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 500px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.sidebar li{
+  width: 466px;
+  height: 100px;
+}
+.sidebar li:first-child{
+  height: 50px;
+}
+.sidebar li:last-child{
+  margin-top: auto;
+}
+.sidebar li:last-child a{
+  font-size: 25px;
+  font-weight: 100;
+}
+.off-screen-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 466px;
+  background-color: rgba(255, 255, 255, 0.768);
+  backdrop-filter: blur(10px); 
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(-101%);
+  transition: transform .5s ease;
+  z-index: 1000;
+}
+.off-screen-menu.active{
+  transform: translateX(0);
+}
+.search-bar{
+  width: 100%;
+  max-width: 570px;
+  background: rgba(186, 184, 184, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 4px 16px;
+  height: 30px;
+}
+.search-bar-wrapper{
+  flex: 1;
+  display: flex;
+  height: 38px;
+  justify-content: center;
+}
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+  color: black;
+  line-height: 1.1;
+}
+::placeholder{
+  color: rgb(192, 191, 191);
+}
+.search-bar svg{
+  border: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0);
+  padding-top: 1px;
+}
+#clear{
+  cursor: pointer;
+  display: none;
+}
+#clear:hover{
+  background-color: rgba(221, 221, 221, 0.693);
+  border-radius: 20px;
+  box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
+}
+.star{
+  font-size: 1.5rem;
+  color: #ff9800;
+  background-color: unset;
+  border: none;
+}
+.wrap{
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
+}
+/*
+li button {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+li button:hover {
+  opacity: 0.7;
+}
+*/
+
+/*
+.kanit-thin {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.kanit-extralight {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-extrabold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kanit-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.kanit-thin-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.kanit-extralight-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.kanit-light-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kanit-regular-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.kanit-medium-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.kanit-semibold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.kanit-bold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.kanit-extrabold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.kanit-black-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+*/
