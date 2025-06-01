@@ -63,7 +63,7 @@ nav{
   width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
-  background-color: #7f6553;
+  background-color: #8a705d;
   z-index: 998;
 }
 nav ul, .off-screen-menu{
@@ -87,10 +87,10 @@ nav a, .off-screen-menu a{
   font-weight: 200;
 }
 nav a:hover{
-  background-color: #725845;
+  background-color: #755948;
 }
 .off-screen-menu a:hover{
-  background-color: #725845a0;
+  background-color: #7559489c;
 }
 nav li:first-child{
   margin-right: auto;
@@ -217,7 +217,7 @@ nav li:first-child{
   flex-wrap: wrap;
   gap: 15px;
   align-items: center;
-  max-width: 320px;
+  max-width: 400px;
   max-height: 40px;
   padding-top: 50px;
 }
@@ -252,11 +252,18 @@ nav li:first-child{
 }
 .churrasco-image{
   display: block;
+  object-position: center -300px;
   object-fit: cover;
   width: 50%;
   height: 460px;
   margin: auto;
   border-radius: 20px;
+}
+.profile-comment{
+  padding-bottom: 30px;
+}
+.review span{
+  margin-left: -3px;
 }
 .sub-header{
   display: flex;

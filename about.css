@@ -63,7 +63,7 @@ nav{
   width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
-  background-color: #7f6553;
+  background-color: #8a705d;
   z-index: 998;
 }
 nav ul, .off-screen-menu{
@@ -86,8 +86,11 @@ nav a, .off-screen-menu a{
   font-size: 45px;
   font-weight: 200;
 }
-nav a:hover, .off-screen-menu a:hover{
-  background-color: #5d4637 ;
+nav a:hover{
+  background-color: #755948;
+}
+.off-screen-menu a:hover{
+  background-color: #7559489c;
 }
 nav li:first-child{
   margin-right: auto;
