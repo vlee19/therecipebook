@@ -301,7 +301,7 @@ nav li:first-child{
 .save-btn {
   margin-top: 20px;
   width: 20%;
-  background-color: #af5e00;
+  background-color: #b46b18;
   color: rgb(255, 255, 255);
   padding: 8px;
   border: none;
@@ -311,7 +311,7 @@ nav li:first-child{
 }
 
 .save-btn:hover {
-  background-color: #7b4100;
+  background-color: #894900;
 }
 
 .back-btn{
