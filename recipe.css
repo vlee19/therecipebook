@@ -214,10 +214,9 @@ nav li:first-child{
   flex-wrap: wrap;
   gap: 15px;
   align-items: center;
-  padding-top: 10px;
   max-width: 400px;
   max-height: 40px;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 .tag{
   background-color: #ececec;
