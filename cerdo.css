@@ -217,7 +217,7 @@ nav li:first-child{
   flex-wrap: wrap;
   gap: 15px;
   align-items: center;
-  max-width: 400px;
+  max-width: 370px;
   max-height: 40px;
   padding-top: 50px;
 }
@@ -250,7 +250,7 @@ nav li:first-child{
   overflow: hidden;
   justify-content: center;
 }
-.churrasco-image{
+.cerdo-image{
   display: block;
   object-position: center -300px;
   object-fit: cover;
