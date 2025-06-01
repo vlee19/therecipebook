@@ -239,17 +239,25 @@ nav li:first-child{
 .left-panel {
   flex: 1;
   max-width: 480px;
-  margin-left: 50px;
+  margin-left: 70px;
+  margin-top: 85px;
 }
 
 /* NEW: optional spacing between search and suggestions */
 .search-section {
   margin-bottom: 1.5rem;
+  width: 110%;
 }
 
 /* UPDATE: make suggestion boxes responsive to container */
 .suggestion-box {
-  width: 100%;
+  width: 110%;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  font-family: 'Inter', sans-serif;
+    font-size: 30px;
 }
 
 /* NEW: right panel with general content area */
@@ -277,8 +285,8 @@ nav li:first-child{
 /* Center the container and limit its width */
 .container {
   display: flex;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 90px;
+  padding: 40px;
   max-width: 1200px; /* or 1000px depending on how narrow you want it */
   margin: 0 auto; /* this centers it horizontally */
 }
