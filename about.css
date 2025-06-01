@@ -27,7 +27,7 @@ h6{
   font-weight: 100;
 }
 p{
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #logo{
@@ -63,7 +63,7 @@ nav{
   width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
-  background-color: #be5103;
+  background-color: #7f6553;
   z-index: 998;
 }
 nav ul, .off-screen-menu{
@@ -87,7 +87,7 @@ nav a, .off-screen-menu a{
   font-weight: 200;
 }
 nav a:hover, .off-screen-menu a:hover{
-  background-color: #954003;
+  background-color: #5d4637 ;
 }
 nav li:first-child{
   margin-right: auto;
@@ -126,7 +126,7 @@ nav li:first-child{
   left: 0;
   height: 100vh;
   width: 466px;
-  background-color: #be510387;
+  background-color: #856b5aa7;
   backdrop-filter: blur(10px); 
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-101%);
@@ -139,7 +139,7 @@ nav li:first-child{
 .search-bar{
   width: 100%;
   max-width: 570px;
-  background: rgba(36, 35, 35, 0.204);
+  background: rgba(230, 230, 230, 0.21);
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -159,11 +159,11 @@ nav li:first-child{
   outline: none;
   font-size: 20px;
   padding-left: 10px;
-  color: #471e02;
+  color: #523929;
   line-height: 1.1;
 }
 ::placeholder{
-  color: #753003;
+  color: #70503ba8;
 }
 .search-bar svg{
   border: none;
@@ -177,9 +177,9 @@ nav li:first-child{
   display: none;
 }
 #clear:hover{
-  background-color: #903c04;
+  background-color: #5d463775;
   border-radius: 20px;
-  box-shadow: 0 0 0 2px #903c04;
+  box-shadow: 0 0 0 2px #5d463775;
 }
 
 h2{
@@ -209,17 +209,26 @@ h2{
   gap: 135px;
 }
 .logo-img-box{
+  position: relative;
   overflow: hidden;
 }
 .logo-img-box img{
+  position: relative;
   width: 50%;
   height: 50%;
   object-fit: cover;
   padding-left: 50px;
 }
+.logo-rect{
+  padding: 54px 0 54.5px;
+  background-color: #7f6553;
+  z-index: 0;
+}
 .logo-description-container,.about-description-container{
   position: relative;
   width: 900px;
+  align-items: center;
+  display: flex;
 }
 .logo-description-container{
   left: -179px;
@@ -232,13 +241,20 @@ p{
   font-size: 20px;
   z-index: 1;
   margin: 0;
-  padding: 50px;
+  padding: 80px;
 }
-.rect{
+.recipebook-section .rect{
   position: absolute;
-  background-color: #b96b33;
+  background-color: #aa8b76;
   width: 1070.5px;
   height: 100%;
+  z-index: 0;
+}
+.recipebook-section-about .rect{
+  position: absolute;
+  background-color: #aa8b76;
+  width: 1070.5px;
+  height: 500px;
   z-index: 0;
 }
 

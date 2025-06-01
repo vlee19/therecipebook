@@ -169,12 +169,6 @@ nav li:first-child{
   border-radius: 20px;
   box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
 }
-.star{
-  font-size: 1.5rem;
-  color: #ff9800;
-  background-color: unset;
-  border: none;
-}
 .wrap{
   display: block;
   object-fit: cover;
@@ -392,8 +386,40 @@ input[type="text"] {
   width: 100%;
   margin-top: 10px;
 }
+.edit-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  border: 1px solid #ccc;
+  background-color: #c3c1c1;
+  color: #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 4px;
+  transition: background-color 0.2s ease;
+}
 
+.edit-btn:hover {
+  background-color: #8b8a8a;
+}
+.delete-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  border: 1px solid #ccc;
+  background-color: #e72929;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 4px;
+  transition: background-color 0.2s ease;
+}
 
+.delete-btn:hover {
+  background-color: #861616;
+}
 /*
 li button {
   margin-left: 10px;

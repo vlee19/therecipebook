@@ -20,6 +20,7 @@ function addIngredient() {
 
   // Reset inputs
   ingredientInput.value = "";
+  categoryInput.value = "";
   ingredientInput.focus();
 }
 
@@ -40,8 +41,8 @@ function renderIngredients() {
       const li = document.createElement("li");
       li.innerHTML = `
         <span>${ingredient}</span>
-        <button onclick="editIngredient('${category}', ${index})">Edit</button>
-        <button onclick="deleteIngredient('${category}', ${index})">Delete</button>
+        <button class="edit-btn" onclick="editIngredient('${category}', ${index})">Edit</button>
+        <button class="delete-btn" onclick="deleteIngredient('${category}', ${index})">Delete</button>
       `;
       list.appendChild(li);
     });
@@ -82,8 +83,8 @@ function editIngredient(category, index) {
     const li = document.createElement("li");
     li.innerHTML = `
       <span>${direction}</span>
-      <button onclick="editItem(this)">Edit</button>
-      <button onclick="deleteItem(this)">Delete</button>
+      <button class="edit-btn" onclick="editItem(this)">Edit</button>
+      <button class="delete-btn" onclick="deleteItem(this)">Delete</button>
     `;
     list.appendChild(li);
 
