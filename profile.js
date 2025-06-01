@@ -61,3 +61,9 @@ function showCreate(){
 function showRecipe(){
   window.location.href = 'recipe.html';
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const footer = document.querySelector('.footer-content');
+  footer.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});

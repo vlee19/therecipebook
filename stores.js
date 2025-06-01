@@ -31,3 +31,10 @@ clear.addEventListener('click', () => {
   clear.style.display = 'none';
   searchInput.focus();
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const footer = document.querySelector('.footer-content');
+  footer.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+

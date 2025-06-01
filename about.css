@@ -221,7 +221,7 @@ h2{
 }
 .logo-rect{
   padding: 54px 0 54.5px;
-  background-color: #7f6553;
+  background-color: #7d593e ;
   z-index: 0;
 }
 .logo-description-container,.about-description-container{
@@ -245,19 +245,49 @@ p{
 }
 .recipebook-section .rect{
   position: absolute;
-  background-color: #aa8b76;
+  background-color: #9b7a65;
   width: 1070.5px;
   height: 100%;
   z-index: 0;
 }
 .recipebook-section-about .rect{
   position: absolute;
-  background-color: #aa8b76;
+  background-color: #9b7a65;
   width: 1070.5px;
   height: 500px;
   z-index: 0;
 }
-
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  background-color: #7f6553;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+.footer h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 30px;
+}
+.footer svg{
+  display: flex;
+}
+.footer-content:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
 /*
 li button {
   margin-left: 10px;
