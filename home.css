@@ -243,6 +243,9 @@ p{
   gap: 10px;
   align-items: center;
 }
+.section:not(:last-child){
+  margin-bottom: -20px;
+}
 .recipePic {
   display: flex;
   flex-direction: column;
