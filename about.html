@@ -1,47 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>About Page</title>
-    <link rel="stylesheet" href="about.css">
-  </head>
 
-  <body>
-    <div class="off-screen-menu">
-        <ul class="sidebar">
-          <li onclick="hideSidebar(event)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="stores.html">Grocery Stores</a></li>
-          <li><a href="about.html" style="font-weight: 500;" >About</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
-      </div>
-    <nav>
-      <div class="overlay"></div>
+<head>
+  <meta charset="UTF-8">
+  <title>About Page</title>
+  <link rel="stylesheet" href="about.css">
+</head>
 
-      <ul>
-        <li onclick="showSidebar(event)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        <li class="search-bar-wrapper">
-          <form actions="" method="get" class="search-bar">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#83634e"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
-            <input id="search" type="text" placeholder="Search" name="q">
-            <svg id="clear" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#83634e"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-          </form>
-        </li>
-        <li><img id="logo" src="images/therecipebook_icon.png" alt="TheRecipeBook"></li>  
-      </ul>
-    </nav>
+<body>
+  <div class="off-screen-menu">
+    <ul class="sidebar">
+      <li onclick="hideSidebar(event)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+            viewBox="0 -960 960 960" width="26px" fill="#000000">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="stores.html">Grocery Stores</a></li>
+      <li><a href="about.html" style="font-weight: 500;">About</a></li>
+      <li><a href="#">Log Out</a></li>
+    </ul>
+  </div>
+  <nav>
+    <div class="overlay"></div>
 
-    <h2>About TheRecipeBook</h2>
+    <ul>
+      <li onclick="showSidebar(event)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+            viewBox="0 -960 960 960" width="26px" fill="#000000">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></a></li>
+      <li class="search-bar-wrapper">
+        <form actions="" method="get" class="search-bar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#83634e">
+            <path
+              d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+          </svg>
+          <input id="search" type="text" placeholder="Search" name="q">
+          <svg id="clear" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+            fill="#83634e">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg>
+        </form>
+      </li>
+      <li><img id="logo" src="images/therecipebook_icon.png" alt="TheRecipeBook"></li>
+    </ul>
+  </nav>
+
+  <h2>About TheRecipeBook</h2>
+  <div class="recipebook-section">
     <div class="logo-img-box">
       <img src="images/therecipebook_icon.png" alt="TheRecipeBook logo">
     </div>
+    <div class="logo-description-container">
+      <div class="rect"></div>
+      <p>Our product is geared towards first generation Americans/immigrants and children of immigrants in an effort to
+        reconnect with our cultural roots. Personally speaking, this concept came from the idea that our group comprises
+        first generation Americans with little knowledge about the traditional cooking methods of certain dishes from
+        our cultures, with many of the recipes being held very secretively culturally, either simply being memorized or
+        put in antiquated packages such as old books or notes. So we want to provide a resource for this knowledge to
+        become more accessible. Target Age Group 18-24 maybe. Around 20-25% of pop is first and second generation
+        americans</p>
+    </div>
+  </div>
 
-    <h2>About The Gator Bites</h2>
-    <div class="img-box">
+  <h2>About The Gator Bites</h2>
+  <div class="recipebook-section-about">
+    <div class="about-img-box">
       <img src="images/about_image.jpg" alt="The Gator Bites">
     </div>
-    <script src="about.js"></script>
-  </body>
+    <div class="about-description-container">
+      <div class="rect"></div>
+      <p>We are a group of college students located in South Florida who hold a deep connection to cooking.</p>
+    </div>
+  </div>
+  <script src="about.js"></script>
+</body>
+
 </html>

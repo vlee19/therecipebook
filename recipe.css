@@ -234,11 +234,10 @@ nav li:first-child{
 .sub-header{
   display: flex;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 26px;
 }
 .sub-header .star{
-  font-size: 60px;
-  color: #ff9800;
+  font-size: 37px;
   background-color: unset;
   border: none;
 }
@@ -400,11 +399,44 @@ button:hover{
 .profile-comment h4{
   font-size: 20px;
 }
-.stars{
+.stars, .star-ratings{
   font-size: 20px;
   color: #ff9800;
   background-color: unset;
   border: none;
+}
+.stars:hover{
+  background-color: #adacacc1;
+  border-radius: 10px;
+}
+.rating-link{
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.hover-popup{
+  display: block;
+  position: absolute;
+  bottom: -133px;
+  left: 160px;
+  width: 200px;
+  background-color: rgb(215, 212, 212);
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  font-size: 14px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.rating-link:hover .hover-popup{
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.hover-popup ul{
+  list-style: none;
 }
 /*
 .kanit-thin {
