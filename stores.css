@@ -283,3 +283,34 @@ nav li:first-child{
 .suggestion-box.highlighted {
   background-color: #FBFBFB;
 }
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  background-color: #7f6553;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+.footer h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 30px;
+}
+.footer svg{
+  display: flex;
+}
+.footer-content:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
