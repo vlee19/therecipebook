@@ -27,12 +27,12 @@ h6{
   font-weight: 100;
 }
 p{
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #logo{
   width: 42px;
-  padding-right: 10px;
+  padding: 0px 2px;
 }
 .overlay{
   position: fixed;
@@ -50,12 +50,21 @@ p{
   opacity: 1;
   pointer-events: all;
 }
-nav{
+.off-screen-menu{
   position: sticky;
   top: 0;
   width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
+  background-color: #be5103;
+  z-index: 998;
 }
 nav ul, .off-screen-menu{
   width: 100%;
@@ -78,7 +87,7 @@ nav a, .off-screen-menu a{
   font-weight: 200;
 }
 nav a:hover, .off-screen-menu a:hover{
-  background-color: #f0f0f0;
+  background-color: #954003;
 }
 nav li:first-child{
   margin-right: auto;
@@ -117,7 +126,7 @@ nav li:first-child{
   left: 0;
   height: 100vh;
   width: 466px;
-  background-color: rgba(255, 255, 255, 0.768);
+  background-color: #be510387;
   backdrop-filter: blur(10px); 
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-101%);
@@ -130,7 +139,7 @@ nav li:first-child{
 .search-bar{
   width: 100%;
   max-width: 570px;
-  background: rgba(186, 184, 184, 0.2);
+  background: rgba(36, 35, 35, 0.204);
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -150,11 +159,11 @@ nav li:first-child{
   outline: none;
   font-size: 20px;
   padding-left: 10px;
-  color: black;
+  color: #471e02;
   line-height: 1.1;
 }
 ::placeholder{
-  color: rgb(192, 191, 191);
+  color: #753003;
 }
 .search-bar svg{
   border: none;
@@ -168,9 +177,9 @@ nav li:first-child{
   display: none;
 }
 #clear:hover{
-  background-color: rgba(221, 221, 221, 0.693);
+  background-color: #903c04;
   border-radius: 20px;
-  box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
+  box-shadow: 0 0 0 2px #903c04;
 }
 
 .recipe-header{
@@ -205,10 +214,9 @@ nav li:first-child{
   flex-wrap: wrap;
   gap: 15px;
   align-items: center;
-  padding-top: 10px;
   max-width: 400px;
   max-height: 40px;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 .tag{
   background-color: #ececec;
@@ -220,16 +228,16 @@ nav li:first-child{
 }
 .flag{
   width: 350px;
-  padding-right: 35px;
+  padding-top: 15px;
+  padding-right: 15px;
 }
 .sub-header{
   display: flex;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 26px;
 }
 .sub-header .star{
-  font-size: 60px;
-  color: #ff9800;
+  font-size: 37px;
   background-color: unset;
   border: none;
 }
@@ -268,7 +276,7 @@ nav li:first-child{
   align-items: center;
   text-align: center;
   font-size: 18px;
-  padding-top: 20px;
+  padding: 20px;
 }
 .recipe-sections{
   display: flex;
@@ -391,11 +399,46 @@ button:hover{
 .profile-comment h4{
   font-size: 20px;
 }
-.stars{
+.stars, .star-ratings{
   font-size: 20px;
   color: #ff9800;
   background-color: unset;
   border: none;
+}
+.stars:hover{
+  background-color: #adacacc1;
+  border-radius: 10px;
+}
+.rating-link{
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.hover-popup{
+  display: block;
+  position: absolute;
+  bottom: -133px;
+  left: 160px;
+  width: 200px;
+  background-color: rgb(215, 212, 212);
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  font-size: 14px;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.stars:hover + .hover-popup{
+  display: block;
+  pointer-events: auto;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.hover-popup ul{
+  list-style: none;
 }
 /*
 .kanit-thin {
