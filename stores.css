@@ -27,12 +27,12 @@ h6{
   font-weight: 100;
 }
 p{
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #logo{
-  width: 37px;
-  padding-right: 10px;
+  width: 42px;
+  padding: 0px 2px;
 }
 .overlay{
   position: fixed;
@@ -50,21 +50,33 @@ p{
   opacity: 1;
   pointer-events: all;
 }
-nav{
+.off-screen-menu{
+  position: sticky;
+  top: 0;
+  width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-nav ul{
+nav{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
+  background-color: #7f6553;
+  z-index: 998;
+}
+nav ul, .off-screen-menu{
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-nav li{
+nav li,.off-screen-menu li{
   height: 50px;
 }
-nav a{
+nav a, .off-screen-menu a{
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
@@ -74,8 +86,8 @@ nav a{
   font-size: 45px;
   font-weight: 200;
 }
-nav a:hover{
-  background-color: #f0f0f0;
+nav a:hover, .off-screen-menu a:hover{
+  background-color: #5d4637 ;
 }
 nav li:first-child{
   margin-right: auto;
@@ -114,7 +126,7 @@ nav li:first-child{
   left: 0;
   height: 100vh;
   width: 466px;
-  background-color: rgba(255, 255, 255, 0.768);
+  background-color: #675042a7;
   backdrop-filter: blur(10px); 
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-101%);
@@ -127,7 +139,7 @@ nav li:first-child{
 .search-bar{
   width: 100%;
   max-width: 570px;
-  background: rgba(186, 184, 184, 0.2);
+  background: rgba(230, 230, 230, 0.21);
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -147,11 +159,11 @@ nav li:first-child{
   outline: none;
   font-size: 20px;
   padding-left: 10px;
-  color: black;
+  color: #523929;
   line-height: 1.1;
 }
 ::placeholder{
-  color: rgb(192, 191, 191);
+  color: #70503ba8;
 }
 .search-bar svg{
   border: none;
@@ -165,15 +177,9 @@ nav li:first-child{
   display: none;
 }
 #clear:hover{
-  background-color: rgba(221, 221, 221, 0.693);
+  background-color: #5d463775;
   border-radius: 20px;
-  box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
-}
-.star{
-  font-size: 1.5rem;
-  color: #ff9800;
-  background-color: unset;
-  border: none;
+  box-shadow: 0 0 0 2px #5d463775;
 }
 .wrap{
   display: block;
