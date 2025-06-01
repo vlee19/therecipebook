@@ -61,6 +61,9 @@ function showCreate(){
 function showRecipe(){
   window.location.href = 'recipe.html';
 }
+function showCerdo(){
+  window.location.href = 'cerdo.html';
+}
 document.addEventListener("DOMContentLoaded", () => {
   const footer = document.querySelector('.footer-content');
   footer.addEventListener('click', () => {
