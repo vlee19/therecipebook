@@ -246,7 +246,7 @@ nav li:first-child{
   display: flex;
   justify-content: center;
   gap: 40px; /* space between tabs */
-  margin-bottom: 0px; /* space below the tabs */
+  margin-bottom: 10px; /* space below the tabs */
 }
 
 .profile-tabs button {
@@ -376,7 +376,7 @@ nav li:first-child{
 }
 .chef-hat-icon {
   position: absolute;
-  top: 20px;   /* adjust as needed */
+  top: 5px;   /* adjust as needed */
   left: 0px;  /* adjust as needed */
   width: 60px;
   height: 60px;
