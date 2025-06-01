@@ -276,7 +276,7 @@ nav li:first-child{
   align-items: center;
   text-align: center;
   font-size: 18px;
-  padding-top: 20px;
+  padding: 20px;
 }
 .recipe-sections{
   display: flex;
