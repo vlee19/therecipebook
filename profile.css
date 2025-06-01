@@ -126,7 +126,7 @@ nav li:first-child{
   left: 0;
   height: 100vh;
   width: 466px;
-  background-color: #675042a7;
+  background-color: #856b5aa7;
   backdrop-filter: blur(10px); 
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-101%);
