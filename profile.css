@@ -63,7 +63,7 @@ nav{
   width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
-  background-color: #be5103;
+  background-color: #8d7261;
   z-index: 998;
 }
 nav ul, .off-screen-menu{
@@ -207,30 +207,28 @@ nav li:first-child{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 24px; /* Try increasing this safely */
-  max-width: 100%; /* Ensure container isn’t constraining width */
+  font-size: 24px;
+  max-width: 100%; 
 }
 
 .ratings {
-  white-space: nowrap;       /* Prevents wrapping */
-  display: inline-block;     /* Keeps each rating on one line */
+  white-space: nowrap;    
+  display: inline-block;    
 }
 
 .star {
-  color: gold;
-  font-size: 1em;            /* Relative to parent font size */
+  font-size: 1em;            
   padding-left: 4px;
-  vertical-align: middle;
 }
 
 .title-row {
   display: flex;
   align-items: center;
-  gap: 10px; /* optional: space between heading and buttons */
+  gap: 10px; 
 }
 
 .title-row h1 {
-  margin: 0; /* remove default spacing to align better */
+  margin: 0; 
 }
 
 .title-row button {
@@ -324,7 +322,7 @@ nav li:first-child{
 .tab-content.active {
   display: block;
 }
-.review-card {
+.review-card, .no-review-card {
   display: flex;
   align-items: flex-start;
   background-color: white;
@@ -374,18 +372,79 @@ nav li:first-child{
   color: #000;
   flex: 1;
 }
-.chef-hat-icon {
+.review-card .chef-hat-icon {
   position: absolute;
-  top: 5px;   /* adjust as needed */
-  left: 0px;  /* adjust as needed */
+  top: 21px;   
+  left: 0px; 
   width: 60px;
   height: 60px;
   z-index: 5;
 }
-
+.no-review-card .chef-hat-icon {
+  position: absolute;
+  top: 5px;   
+  left: 0px; 
+  width: 60px;
+  height: 60px;
+  z-index: 5;
+}
 .chef-hat {
   width: 100%;
   height: 100%;
   transform: rotate(-32deg);
   fill: #000; /* or any color you want */
+}
+.person{
+  border-radius: 40px;
+}
+.stars, .star-ratings{
+  font-size: 20px;
+  background-color: unset;
+  border: none;
+  margin-left: -3px;
+}
+.stars:hover{
+  background-color: #adacacc1;
+  border-radius: 10px;
+}
+.rating-link{
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.hover-popup{
+  display: block;
+  position: absolute;
+  bottom: -90px;
+  left: 150px;
+  width: 140px;
+  background-color: rgb(215, 212, 212);
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  font-size: 20px;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.stars:hover + .hover-popup{
+  display: block;
+  pointer-events: auto;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.hover-popup ul{
+  list-style: none;
+}
+.image-container{
+  position: relative;
+  display: inline-block;
+}
+.image-container svg{
+  position: absolute;
+  z-index: 2;
+  right: 8px;
+  cursor: pointer;
 }
