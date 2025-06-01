@@ -189,6 +189,54 @@ nav li:first-child{
   object-fit: cover;
   overflow: hidden;
 }
+
+.search-box{
+  width: 500px;
+  background: #bbbbbb;
+  margin: 60px -60px;
+  border-radius: 5px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+input{
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+}
+.row svg{
+  border: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0);
+  padding-top: 1px;
+}
+::placeholder{
+  color: #555;
+}
+.result-box ul{
+  border-top: 1px solid #999;
+  padding: 15px 10px;
+}
+.result-box ul li{
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px;
+}
+.result-box ul li:hover{
+  background-color:#333;
+}
+.result-box{
+  max-height: 530px;
+  overflow-y: scroll;
+}
+
 .suggestions-section {
   position: relative;
   padding: 2rem;
