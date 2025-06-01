@@ -186,11 +186,58 @@ nav li:first-child{
   max-width: 600px;
   margin: 0 auto;
 }
+/* General container layout */
+/* Container layout */
+.container {
+  display: flex;
+  gap: 90px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center horizontally */
+}
 
+/* Left panel layout */
+.left-panel {
+  flex: 0 0 480px;         /* Fixed width */
+  max-width: 400px;
+  margin-left: 75px;
+  margin-top: 85px;
+}
+
+/* Right panel layout */
+.right-panel {
+  flex: 0 0 700px;         /* Fixed width, no growing or shrinking */
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+
+.right-panel h2 {
+  margin-bottom: 10px;
+}
+
+.right-panel p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.right-panel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Search and suggestions section */
 .search-container {
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
+}
+
+.search-section {
+  margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .search-input {
@@ -204,21 +251,23 @@ nav li:first-child{
   box-sizing: border-box;
 }
 
+/* Suggestions */
 .suggestions-list {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 0;
 }
 
 .suggestion-box {
-  width: 448px;
+  width: 100%;
+  max-width: 448px;
   height: 69px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Inter', sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
@@ -227,66 +276,4 @@ nav li:first-child{
 
 .suggestion-box.highlighted {
   background-color: #FBFBFB;
-}
-/* NEW: wrapper for left and right panel layout */
-.container {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-/* NEW: left panel that contains search and suggestions */
-.left-panel {
-  flex: 1;
-  max-width: 480px;
-  margin-left: 70px;
-  margin-top: 85px;
-}
-
-/* NEW: optional spacing between search and suggestions */
-.search-section {
-  margin-bottom: 1.5rem;
-  width: 110%;
-}
-
-/* UPDATE: make suggestion boxes responsive to container */
-.suggestion-box {
-  width: 110%;
-    height: 69px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  font-family: 'Inter', sans-serif;
-    font-size: 30px;
-}
-
-/* NEW: right panel with general content area */
-.right-panel {
-  flex: 3;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-/* OPTIONAL POLISH: better spacing for headings and text inside right panel */
-.right-panel h2 {
-  margin-bottom: 1rem;
-}
-
-.right-panel p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-.right-panel img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-/* Center the container and limit its width */
-.container {
-  display: flex;
-  gap: 90px;
-  padding: 40px;
-  max-width: 1200px; /* or 1000px depending on how narrow you want it */
-  margin: 0 auto; /* this centers it horizontally */
 }
