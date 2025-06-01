@@ -63,7 +63,7 @@ nav{
   width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
-  background-color: #aa8b76;
+  background-color: #be5103;
   z-index: 998;
 }
 nav ul, .off-screen-menu{
@@ -87,7 +87,7 @@ nav a, .off-screen-menu a{
   font-weight: 200;
 }
 nav a:hover, .off-screen-menu a:hover{
-  background-color: #91725d;
+  background-color: #954003;
 }
 nav li:first-child{
   margin-right: auto;
@@ -126,7 +126,7 @@ nav li:first-child{
   left: 0;
   height: 100vh;
   width: 466px;
-  background-color: #aa8b76a6;
+  background-color: #be510387;
   backdrop-filter: blur(10px); 
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-101%);
@@ -139,7 +139,7 @@ nav li:first-child{
 .search-bar{
   width: 100%;
   max-width: 570px;
-  background: rgba(238, 236, 236, 0.2);
+  background: rgba(36, 35, 35, 0.204);
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -159,11 +159,11 @@ nav li:first-child{
   outline: none;
   font-size: 20px;
   padding-left: 10px;
-  color: #6f5444;
+  color: #471e02;
   line-height: 1.1;
 }
 ::placeholder{
-  color: #967661;
+  color: #753003;
 }
 .search-bar svg{
   border: none;
@@ -177,9 +177,9 @@ nav li:first-child{
   display: none;
 }
 #clear:hover{
-  background-color: #97766091;
+  background-color: #903c04;
   border-radius: 20px;
-  box-shadow: 0 0 0 2px #97766091;
+  box-shadow: 0 0 0 2px #903c04;
 }
 
 .recipe-header{
