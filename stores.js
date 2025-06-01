@@ -124,7 +124,7 @@ inputBox.onkeyup = function(){
 }
 function display(result){
   const content = result.map((list)=>{
-    return "<li onclick=selectInput(this)>" + list + "</li>";
+    return "<li class=choose onclick=selectInput(this)>" + list + "</li>";
   });
   resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
 }
@@ -132,3 +132,12 @@ function selectInput(list){
   inputBox.value = list.innerHTML;
   resultsBox.innerHTML = '';
 }
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    const img = document.getElementById("Florida");
+    img.src = "images/complete_map.png";
+  }
+  if(inputBox.value === ''){
+    img.src = "images/map.png";
+  }
+});
