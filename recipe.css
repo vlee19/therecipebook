@@ -261,6 +261,7 @@ nav li:first-child{
 }
 .profile-comment{
   padding-bottom: 30px;
+  max-width: 1250px;
 }
 .review span{
   margin-left: -3px;
