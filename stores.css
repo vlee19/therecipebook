@@ -180,3 +180,105 @@ nav li:first-child{
   object-fit: cover;
   overflow: hidden;
 }
+.suggestions-section {
+  position: relative;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 448px;
+  height: 93px;
+  padding: 1rem;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.suggestion-box {
+  width: 448px;
+  height: 69px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.suggestion-box.highlighted {
+  background-color: #FBFBFB;
+}
+/* NEW: wrapper for left and right panel layout */
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* NEW: left panel that contains search and suggestions */
+.left-panel {
+  flex: 1;
+  max-width: 480px;
+  margin-left: 50px;
+}
+
+/* NEW: optional spacing between search and suggestions */
+.search-section {
+  margin-bottom: 1.5rem;
+}
+
+/* UPDATE: make suggestion boxes responsive to container */
+.suggestion-box {
+  width: 100%;
+}
+
+/* NEW: right panel with general content area */
+.right-panel {
+  flex: 3;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* OPTIONAL POLISH: better spacing for headings and text inside right panel */
+.right-panel h2 {
+  margin-bottom: 1rem;
+}
+
+.right-panel p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.right-panel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* Center the container and limit its width */
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px; /* or 1000px depending on how narrow you want it */
+  margin: 0 auto; /* this centers it horizontally */
+}
