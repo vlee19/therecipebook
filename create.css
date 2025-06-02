@@ -31,8 +31,8 @@ p{
 }
 
 #logo{
-  width: 37px;
-  padding-right: 10px;
+  width: 42px;
+  padding: 0px 8px;
 }
 .overlay{
   position: fixed;
