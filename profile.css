@@ -479,3 +479,18 @@ nav li:first-child{
   transition: transform 0.3s ease;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main {
+    flex: 2;
+  }
+
+  aside {
+    flex: 1;
+  }
+}

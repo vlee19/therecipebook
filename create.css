@@ -420,6 +420,21 @@ input[type="text"] {
 .delete-btn:hover {
   background-color: #861616;
 }
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main {
+    flex: 2;
+  }
+
+  aside {
+    flex: 1;
+  }
+}
 /*
 li button {
   margin-left: 10px;
