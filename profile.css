@@ -318,38 +318,22 @@ nav li:first-child{
 .tab-content {
   display: none;
 }
-
 .tab-content.active {
   display: block;
 }
-.review-card, .no-review-card {
-  display: flex;
-  align-items: flex-start;
-  background-color: white;
-  border: 2px solid #000;
-  border-radius: 1px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding: 20px;
-  max-width: 1338px;
-  width: 100%;
-  gap: 20px;
-  position: relative; /* <--- Add this */
-}
-
 .review-card {
   display: flex;
   align-items: flex-start;
   background-color: white;
   border: 2px solid #000;
   border-radius: 1px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding: 20px;
-  max-width: 1338px;
-  width: 100%;
+  padding: 20px 40px 20px 20px; /* More padding on the left */
+  width: 1521px;                 /* Stretch full viewport width */
+  box-sizing: border-box;
+  position: relative;
   gap: 20px;
 }
+
 
 .reviewer-image {
   width: 114px;
