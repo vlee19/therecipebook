@@ -5,20 +5,20 @@ const clear = document.getElementById('clear');
 const overlay = document.querySelector('.overlay');
 const recipeBtn = document.querySelector('[onclick="showRecipe]');
 
-function showSidebar(event){
+function showSidebar(event) {
   event.preventDefault();
   offScreenMenu.classList.add('active');
   overlay.classList.add('active');
   document.addEventListener('click', outsideClick);
 }
-function hideSidebar(event){
+function hideSidebar(event) {
   event.preventDefault();
   offScreenMenu.classList.remove('active');
   overlay.classList.remove('active');
   document.removeEventListener('click', outsideClick);
 }
-function outsideClick(event){
-  if(!offScreenMenu.contains(event.target) && !menuButton.contains(event.target)){
+function outsideClick(event) {
+  if (!offScreenMenu.contains(event.target) && !menuButton.contains(event.target)) {
     hideSidebar();
   }
 }
@@ -32,7 +32,7 @@ clear.addEventListener('click', () => {
   clear.style.display = 'none';
   searchInput.focus();
 });
-function showRecipe(){
+function showRecipe() {
   window.location.href = 'recipe.html';
 }
 document.addEventListener("DOMContentLoaded", () => {

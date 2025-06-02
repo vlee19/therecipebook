@@ -70,49 +70,49 @@ function editIngredient(category, index) {
 }
 
 
-  function addDirection() {
-    const input = document.getElementById("direction-input");
-    const direction = input.value.trim();
+function addDirection() {
+  const input = document.getElementById("direction-input");
+  const direction = input.value.trim();
 
-    if (direction === "") {
-      alert("Please enter a direction.");
-      return;
-    }
+  if (direction === "") {
+    alert("Please enter a direction.");
+    return;
+  }
 
-    const list = document.getElementById("directions-list");
-    const li = document.createElement("li");
-    li.innerHTML = `
+  const list = document.getElementById("directions-list");
+  const li = document.createElement("li");
+  li.innerHTML = `
       <span>${direction}</span>
       <button class="edit-btn" onclick="editItem(this)">Edit</button>
       <button class="delete-btn" onclick="deleteItem(this)">Delete</button>
     `;
-    list.appendChild(li);
+  list.appendChild(li);
 
-    input.value = "";
-    input.focus();
+  input.value = "";
+  input.focus();
+}
+
+function deleteItem(button) {
+  const li = button.parentElement;
+  li.remove();
+}
+
+function editItem(button) {
+  const li = button.parentElement;
+  const span = li.querySelector("span");
+  const currentText = span.textContent;
+  const newText = prompt("Edit text:", currentText);
+  if (newText !== null && newText.trim() !== "") {
+    span.textContent = newText.trim();
   }
+}
 
-  function deleteItem(button) {
-    const li = button.parentElement;
-    li.remove();
-  }
+const backBtn = document.querySelector('[onclick="backToProfile()"]');
+function backToProfile() {
+  window.location.href = 'profile.html';
+}
 
-  function editItem(button) {
-    const li = button.parentElement;
-    const span = li.querySelector("span");
-    const currentText = span.textContent;
-    const newText = prompt("Edit text:", currentText);
-    if (newText !== null && newText.trim() !== "") {
-      span.textContent = newText.trim();
-    }
-  }
-
-  const backBtn = document.querySelector('[onclick="backToProfile()"]');
-  function backToProfile(){
-    window.location.href = 'profile.html';
-  }
-
-  function previewPhoto(event) {
+function previewPhoto(event) {
   const preview = document.getElementById("photo-preview");
   preview.innerHTML = ""; // Clear previous image
 
@@ -128,20 +128,20 @@ function editIngredient(category, index) {
   }
 }
 document.addEventListener('DOMContentLoaded', function () {
-      const cultureSelect = document.getElementById('recipe-culture');
-      const choices = new Choices(cultureSelect, {
-        removeItemButton: true,
-        placeholderValue: 'Select one or more cultures',
-        searchPlaceholderValue: 'Search cultures'
-      });
-      
-      const tagInput = new Choices('#recipe-tags', {
-        removeItemButton: true,
-        placeholderValue: 'Add tags (e.g., meat, vegan, spicy)',
-        duplicateItemsAllowed: false,
-        addItems: true,
-        paste: true,
-        duplicateItems: false,
-        addItemFilter: value => !!value.trim(),
-      });
+  const cultureSelect = document.getElementById('recipe-culture');
+  const choices = new Choices(cultureSelect, {
+    removeItemButton: true,
+    placeholderValue: 'Select one or more cultures',
+    searchPlaceholderValue: 'Search cultures'
+  });
+
+  const tagInput = new Choices('#recipe-tags', {
+    removeItemButton: true,
+    placeholderValue: 'Add tags (e.g., meat, vegan, spicy)',
+    duplicateItemsAllowed: false,
+    addItems: true,
+    paste: true,
+    duplicateItems: false,
+    addItemFilter: value => !!value.trim(),
+  });
 });

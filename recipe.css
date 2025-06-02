@@ -1,40 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: "Kanit", sans-serif;
 }
-body{
+
+body {
   min-height: 100vh;
 }
-h1{
+
+h1 {
   font-weight: 700;
 }
-h2{
+
+h2 {
   font-weight: 600;
 }
-h3{
+
+h3 {
   font-weight: 500;
 }
-h4{
-  font-weight: 300;
-}
-h5{
-  font-weight: 200;
-}
-h6{
-  font-weight: 100;
-}
-p{
+
+h4 {
   font-weight: 300;
 }
 
-#logo{
+h5 {
+  font-weight: 200;
+}
+
+h6 {
+  font-weight: 100;
+}
+
+p {
+  font-weight: 300;
+}
+
+#logo {
   width: 42px;
   padding: 0px 8px;
 }
-.overlay{
+
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -46,18 +55,21 @@ p{
   pointer-events: none;
   transition: opacity 0.5s ease;
 }
-.overlay.active{
+
+.overlay.active {
   opacity: 1;
   pointer-events: all;
 }
-.off-screen-menu{
+
+.off-screen-menu {
   position: sticky;
   top: 0;
   width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-nav{
+
+nav {
   position: sticky;
   top: 0;
   width: 100%;
@@ -66,17 +78,23 @@ nav{
   background-color: #8a705d;
   z-index: 998;
 }
-nav ul, .off-screen-menu{
+
+nav ul,
+.off-screen-menu {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-nav li,.off-screen-menu li{
+
+nav li,
+.off-screen-menu li {
   height: 50px;
 }
-nav a, .off-screen-menu a{
+
+nav a,
+.off-screen-menu a {
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
@@ -86,16 +104,20 @@ nav a, .off-screen-menu a{
   font-size: 45px;
   font-weight: 200;
 }
-nav a:hover{
+
+nav a:hover {
   background-color: #755948;
 }
-.off-screen-menu a:hover{
+
+.off-screen-menu a:hover {
   background-color: #7559489c;
 }
-nav li:first-child{
+
+nav li:first-child {
   margin-right: auto;
 }
-.sidebar{
+
+.sidebar {
   list-style: none;
   position: fixed;
   top: 0;
@@ -109,37 +131,44 @@ nav li:first-child{
   justify-content: space-between;
   box-sizing: border-box;
 }
-.sidebar li{
+
+.sidebar li {
   width: 466px;
   height: 100px;
 }
-.sidebar li:first-child{
+
+.sidebar li:first-child {
   height: 50px;
 }
-.sidebar li:last-child{
+
+.sidebar li:last-child {
   margin-top: auto;
 }
-.sidebar li:last-child a{
+
+.sidebar li:last-child a {
   font-size: 25px;
   font-weight: 100;
 }
-.off-screen-menu{
+
+.off-screen-menu {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 466px;
   background-color: #856b5aa7;
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-101%);
   transition: transform .5s ease;
   z-index: 1000;
 }
-.off-screen-menu.active{
+
+.off-screen-menu.active {
   transform: translateX(0);
 }
-.search-bar{
+
+.search-bar {
   width: 100%;
   max-width: 570px;
   background: rgba(230, 230, 230, 0.21);
@@ -149,13 +178,15 @@ nav li:first-child{
   padding: 4px 16px;
   height: 30px;
 }
-.search-bar-wrapper{
+
+.search-bar-wrapper {
   flex: 1;
   display: flex;
   height: 38px;
   justify-content: center;
 }
-.search-bar input{
+
+.search-bar input {
   background: transparent;
   flex: 1;
   border: 0;
@@ -165,54 +196,63 @@ nav li:first-child{
   color: #523929;
   line-height: 1.1;
 }
-::placeholder{
+
+::placeholder {
   color: #70503ba8;
 }
-.search-bar svg{
+
+.search-bar svg {
   border: none;
   width: 25px;
   height: 25px;
   background: rgba(255, 255, 255, 0);
   padding-top: 1px;
 }
-#clear{
+
+#clear {
   cursor: pointer;
   display: none;
 }
-#clear:hover{
+
+#clear:hover {
   background-color: #5d463775;
   border-radius: 20px;
   box-shadow: 0 0 0 2px #5d463775;
 }
 
-.recipe-header{
+.recipe-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
 }
-.title{
+
+.title {
   display: flex;
   flex-direction: column;
 }
-.title h2{
+
+.title h2 {
   font-size: 64px;
   margin: 0;
   padding-left: 30px;
 }
-.title h4{
+
+.title h4 {
   font-size: 20px;
   padding-left: 35px;
 }
-.info-block{
+
+.info-block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex: 1;
   flex-wrap: wrap;
 }
-.tag-container{
+
+.tag-container {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -221,7 +261,8 @@ nav li:first-child{
   max-height: 40px;
   padding-top: 50px;
 }
-.tag{
+
+.tag {
   background-color: #ececec;
   color: #333;
   padding: 5px 10px;
@@ -229,28 +270,33 @@ nav li:first-child{
   font-size: 17px;
   white-space: nowrap;
 }
-.flag{
+
+.flag {
   width: 350px;
   padding-top: 15px;
   padding-right: 15px;
 }
-.sub-header{
+
+.sub-header {
   display: flex;
   align-items: center;
   padding-left: 26px;
 }
-.sub-header .star{
+
+.sub-header .star {
   font-size: 37px;
   background-color: unset;
   border: none;
 }
-.wrap{
+
+.wrap {
   display: flex;
   object-fit: cover;
   overflow: hidden;
   justify-content: center;
 }
-.churrasco-image{
+
+.churrasco-image {
   display: block;
   object-position: center -300px;
   object-fit: cover;
@@ -259,40 +305,49 @@ nav li:first-child{
   margin: auto;
   border-radius: 20px;
 }
-.profile-comment{
+
+.profile-comment {
   padding-bottom: 30px;
   max-width: 1250px;
 }
-.review span{
+
+.review span {
   margin-left: -3px;
 }
-.sub-header{
+
+.sub-header {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.sub-header svg{
+
+.sub-header svg {
   width: 60px;
 }
-.info{
+
+.info {
   font-size: 23px;
 }
-.servings,.time{
+
+.servings,
+.time {
   display: flex;
   align-items: center;
   padding-left: 10px;
 }
-.description{
+
+.description {
   display: flex;
   align-items: center;
   text-align: center;
   font-size: 18px;
   padding: 20px;
 }
-.recipe-sections{
+
+.recipe-sections {
   display: flex;
   justify-content: center;
-  align-items: stretch; 
+  align-items: stretch;
   gap: 40px;
   flex-wrap: nowrap;
   padding: 20px;
@@ -301,49 +356,67 @@ nav li:first-child{
   margin: 0 auto;
   box-sizing: border-box;
 }
-.ingredients, .directions{
+
+.ingredients,
+.directions {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-.ingredients{
+
+.ingredients {
   flex: 1;
   min-width: 250px;
   padding-left: 192px;
 }
-.ingredients h2,.directions h2, .comments h2{
+
+.ingredients h2,
+.directions h2,
+.comments h2 {
   font-size: 36px;
 }
-.ingredients h3{
+
+.ingredients h3 {
   font-size: 22px;
 }
-.ingredients h3:not(:first-child),.directions li:not(:first-child){
+
+.ingredients h3:not(:first-child),
+.directions li:not(:first-child) {
   padding-top: 20px;
 }
-.ingredients li{
+
+.ingredients li {
   font-size: 20px;
   list-style-type: none;
 }
-.ingredients .component li{
+
+.ingredients .component li {
   padding-left: 15px;
 }
-.complete{
+
+.complete {
   padding-top: 4px;
 }
-.ingredients .header{
+
+.ingredients .header {
   display: flex;
   align-items: center;
   gap: 50px;
   flex-wrap: wrap;
   margin-bottom: 16px;
 }
-.component,.complete{
+
+.component,
+.complete {
   display: none;
 }
-.component.active,.complete.active{
+
+.component.active,
+.complete.active {
   display: block;
-} 
-.directions{
+}
+
+.directions {
   flex: 1;
   min-width: 300px;
   max-width: 500px;
@@ -352,18 +425,21 @@ nav li:first-child{
   padding-right: 90px;
   gap: 53px;
 }
-.directions ol{
+
+.directions ol {
   font-size: 20px;
   padding-left: 14px;
 }
-.divider{
+
+.divider {
   width: 1px;
   background-color: #000;
   height: auto;
   align-self: stretch;
   margin-right: 41px;
 }
-button{
+
+button {
   margin-top: 20px;
   width: 100%;
   background-color: #a88269;
@@ -374,59 +450,73 @@ button{
   font-size: 16px;
   cursor: pointer;
 }
-button:hover{
+
+button:hover {
   background-color: #68503f;
 }
-.comments{
+
+.comments {
   padding-left: 20px;
   padding-bottom: 31px;
 }
-.profile-icon{
+
+.profile-icon {
   position: relative;
   width: 50px;
   height: 50px;
 }
-.person{
+
+.person {
   background-color: #8e878288;
   border-radius: 40px;
 }
-.chef-hat{
+
+.chef-hat {
   position: absolute;
   top: -20px;
   left: -10px;
   transform: rotate(-32deg);
   z-index: 2;
 }
-.profile-comment{
+
+.profile-comment {
   display: flex;
   align-items: center;
   padding-left: 40px;
 }
-.profile-text{
+
+.profile-text {
   padding-left: 15px;
 }
-.profile-comment h3{
+
+.profile-comment h3 {
   font-size: 20px;
 }
-.profile-comment h4{
+
+.profile-comment h4 {
   font-size: 20px;
 }
-.stars, .star-ratings{
+
+.stars,
+.star-ratings {
   font-size: 20px;
   color: #ff9800;
   background-color: unset;
   border: none;
 }
-.stars:hover{
+
+.stars:hover {
   background-color: #adacacc1;
   border-radius: 10px;
 }
-.rating-link{
+
+.rating-link {
   position: relative;
   text-decoration: none;
   color: black;
 }
-.hover-popup{
+
+.hover-popup {
   display: block;
   position: absolute;
   bottom: -133px;
@@ -436,23 +526,26 @@ button:hover{
   border: 1px solid #ccc;
   padding: 10px;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   font-size: 14px;
   border-radius: 8px;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.stars:hover + .hover-popup{
+
+.stars:hover+.hover-popup {
   display: block;
   pointer-events: auto;
   opacity: 1;
   transition: opacity 0.3s ease;
 }
-.hover-popup ul{
+
+.hover-popup ul {
   list-style: none;
 }
-.footer{
+
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,7 +553,8 @@ button:hover{
   height: 100px;
   background-color: #7f6553;
 }
-.footer-content{
+
+.footer-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -468,17 +562,20 @@ button:hover{
   transform: scale(1);
   transition: transform 0.3s ease;
 }
-.footer h3{
+
+.footer h3 {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 300;
   font-size: 30px;
 }
-.footer svg{
+
+.footer svg {
   display: flex;
 }
-.footer-content:hover{
+
+.footer-content:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
   cursor: pointer;

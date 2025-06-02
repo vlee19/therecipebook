@@ -1,40 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: "Kanit", sans-serif;
 }
-body{
+
+body {
   min-height: 100vh;
 }
-h1{
+
+h1 {
   font-weight: 700;
 }
-h2{
+
+h2 {
   font-weight: 600;
 }
-h3{
+
+h3 {
   font-weight: 500;
 }
-h4{
+
+h4 {
   font-weight: 300;
 }
-h5{
+
+h5 {
   font-weight: 200;
 }
-h6{
+
+h6 {
   font-weight: 100;
 }
-p{
+
+p {
   font-weight: 400;
 }
 
-#logo{
+#logo {
   width: 42px;
   padding: 0px 8px;
 }
-.overlay{
+
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -46,25 +55,30 @@ p{
   pointer-events: none;
   transition: opacity 0.5s ease;
 }
-.overlay.active{
+
+.overlay.active {
   opacity: 1;
   pointer-events: all;
 }
-nav{
+
+nav {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-nav ul{
+
+nav ul {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-nav li{
+
+nav li {
   height: 50px;
 }
-nav a{
+
+nav a {
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
@@ -74,13 +88,16 @@ nav a{
   font-size: 45px;
   font-weight: 200;
 }
-nav a:hover{
+
+nav a:hover {
   background-color: #f0f0f0;
 }
-nav li:first-child{
+
+nav li:first-child {
   margin-right: auto;
 }
-.sidebar{
+
+.sidebar {
   list-style: none;
   position: fixed;
   top: 0;
@@ -94,37 +111,44 @@ nav li:first-child{
   justify-content: space-between;
   box-sizing: border-box;
 }
-.sidebar li{
+
+.sidebar li {
   width: 466px;
   height: 100px;
 }
-.sidebar li:first-child{
+
+.sidebar li:first-child {
   height: 50px;
 }
-.sidebar li:last-child{
+
+.sidebar li:last-child {
   margin-top: auto;
 }
-.sidebar li:last-child a{
+
+.sidebar li:last-child a {
   font-size: 25px;
   font-weight: 100;
 }
-.off-screen-menu{
+
+.off-screen-menu {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 466px;
   background-color: rgba(255, 255, 255, 0.768);
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-101%);
   transition: transform .5s ease;
   z-index: 1000;
 }
-.off-screen-menu.active{
+
+.off-screen-menu.active {
   transform: translateX(0);
 }
-.search-bar{
+
+.search-bar {
   width: 100%;
   max-width: 570px;
   background: rgba(186, 184, 184, 0.2);
@@ -134,13 +158,15 @@ nav li:first-child{
   padding: 4px 16px;
   height: 30px;
 }
-.search-bar-wrapper{
+
+.search-bar-wrapper {
   flex: 1;
   display: flex;
   height: 38px;
   justify-content: center;
 }
-.search-bar input{
+
+.search-bar input {
   background: transparent;
   flex: 1;
   border: 0;
@@ -150,26 +176,31 @@ nav li:first-child{
   color: black;
   line-height: 1.1;
 }
-::placeholder{
+
+::placeholder {
   color: rgb(192, 191, 191);
 }
-.search-bar svg{
+
+.search-bar svg {
   border: none;
   width: 25px;
   height: 25px;
   background: rgba(255, 255, 255, 0);
   padding-top: 1px;
 }
-#clear{
+
+#clear {
   cursor: pointer;
   display: none;
 }
-#clear:hover{
+
+#clear:hover {
   background-color: rgba(221, 221, 221, 0.693);
   border-radius: 20px;
   box-shadow: 0 0 0 2px rgba(221, 221, 221, 0.693);
 }
-.wrap{
+
+.wrap {
   display: block;
   object-fit: cover;
   overflow: hidden;
@@ -308,7 +339,7 @@ nav li:first-child{
   background-color: #894900;
 }
 
-.back-btn{
+.back-btn {
   margin-top: 20px;
   width: 20%;
   background-color: #737483;
@@ -319,9 +350,11 @@ nav li:first-child{
   font-size: 16px;
   cursor: pointer;
 }
-.back-btn:hover{
+
+.back-btn:hover {
   background-color: #3d3e49;
 }
+
 .direction-controls {
   display: flex;
   gap: 10px;
@@ -352,6 +385,7 @@ textarea,
 input[type="text"] {
   box-sizing: border-box;
 }
+
 #photo-preview img {
   display: block;
   max-width: 100%;
@@ -359,6 +393,7 @@ input[type="text"] {
   border: 2px solid #ccc;
   border-radius: 8px;
 }
+
 .center-photo-preview {
   display: flex;
   justify-content: center;
@@ -370,6 +405,7 @@ input[type="text"] {
   max-height: 300px;
   border-radius: 10px;
 }
+
 .recipe-top-row {
   display: flex;
   gap: 20px;
@@ -382,10 +418,12 @@ input[type="text"] {
   flex: 1;
   min-width: 200px;
 }
+
 #recipe-tags {
   width: 100%;
   margin-top: 10px;
 }
+
 .edit-btn {
   display: inline-flex;
   align-items: center;
@@ -403,6 +441,7 @@ input[type="text"] {
 .edit-btn:hover {
   background-color: #8b8a8a;
 }
+
 .delete-btn {
   display: inline-flex;
   align-items: center;

@@ -73,20 +73,20 @@ let availableKeywords = [
 const resultsBox = document.querySelector(".result-box");
 const inputBox = document.getElementById("input-box");
 
-function showSidebar(event){
+function showSidebar(event) {
   event.preventDefault();
   offScreenMenu.classList.add('active');
   overlay.classList.add('active');
   document.addEventListener('click', outsideClick);
 }
-function hideSidebar(event){
+function hideSidebar(event) {
   event.preventDefault();
   offScreenMenu.classList.remove('active');
   overlay.classList.remove('active');
   document.removeEventListener('click', outsideClick);
 }
-function outsideClick(event){
-  if(!offScreenMenu.contains(event.target) && !menuButton.contains(event.target)){
+function outsideClick(event) {
+  if (!offScreenMenu.contains(event.target) && !menuButton.contains(event.target)) {
     hideSidebar();
   }
 }
@@ -107,37 +107,37 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-inputBox.onkeyup = function(){
+inputBox.onkeyup = function () {
   let result = [];
   let input = inputBox.value;
-  if(input.length){
-    result = availableKeywords.filter((keyword)=>{
+  if (input.length) {
+    result = availableKeywords.filter((keyword) => {
       return keyword.toLowerCase().includes(input.toLowerCase());
     });
     console.log(result);
   }
   display(result);
 
-  if(!result.length){
+  if (!result.length) {
     resultsBox.innerHTML = '';
   }
 }
-function display(result){
-  const content = result.map((list)=>{
+function display(result) {
+  const content = result.map((list) => {
     return "<li class=choose onclick=selectInput(this)>" + list + "</li>";
   });
   resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
 }
-function selectInput(list){
+function selectInput(list) {
   inputBox.value = list.innerHTML;
   resultsBox.innerHTML = '';
 }
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     const img = document.getElementById("Florida");
     img.src = "images/complete_map.png";
   }
-  if(inputBox.value === ''){
+  if (inputBox.value === '') {
     img.src = "images/map.png";
   }
 });

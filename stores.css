@@ -1,40 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: "Kanit", sans-serif;
 }
-body{
+
+body {
   min-height: 100vh;
 }
-h1{
+
+h1 {
   font-weight: 700;
 }
-h2{
+
+h2 {
   font-weight: 600;
 }
-h3{
+
+h3 {
   font-weight: 500;
 }
-h4{
-  font-weight: 300;
-}
-h5{
-  font-weight: 200;
-}
-h6{
-  font-weight: 100;
-}
-p{
+
+h4 {
   font-weight: 300;
 }
 
-#logo{
+h5 {
+  font-weight: 200;
+}
+
+h6 {
+  font-weight: 100;
+}
+
+p {
+  font-weight: 300;
+}
+
+#logo {
   width: 42px;
   padding: 0px 8px;
 }
-.overlay{
+
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -46,18 +55,21 @@ p{
   pointer-events: none;
   transition: opacity 0.5s ease;
 }
-.overlay.active{
+
+.overlay.active {
   opacity: 1;
   pointer-events: all;
 }
-.off-screen-menu{
+
+.off-screen-menu {
   position: sticky;
   top: 0;
   width: 100%;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-nav{
+
+nav {
   position: sticky;
   top: 0;
   width: 100%;
@@ -66,17 +78,23 @@ nav{
   background-color: #8a705d;
   z-index: 998;
 }
-nav ul, .off-screen-menu{
+
+nav ul,
+.off-screen-menu {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-nav li,.off-screen-menu li{
+
+nav li,
+.off-screen-menu li {
   height: 50px;
 }
-nav a, .off-screen-menu a{
+
+nav a,
+.off-screen-menu a {
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
@@ -86,16 +104,20 @@ nav a, .off-screen-menu a{
   font-size: 45px;
   font-weight: 200;
 }
-nav a:hover{
+
+nav a:hover {
   background-color: #755948;
 }
-.off-screen-menu a:hover{
+
+.off-screen-menu a:hover {
   background-color: #7559489c;
 }
-nav li:first-child{
+
+nav li:first-child {
   margin-right: auto;
 }
-.sidebar{
+
+.sidebar {
   list-style: none;
   position: fixed;
   top: 0;
@@ -109,37 +131,44 @@ nav li:first-child{
   justify-content: space-between;
   box-sizing: border-box;
 }
-.sidebar li{
+
+.sidebar li {
   width: 466px;
   height: 100px;
 }
-.sidebar li:first-child{
+
+.sidebar li:first-child {
   height: 50px;
 }
-.sidebar li:last-child{
+
+.sidebar li:last-child {
   margin-top: auto;
 }
-.sidebar li:last-child a{
+
+.sidebar li:last-child a {
   font-size: 25px;
   font-weight: 100;
 }
-.off-screen-menu{
+
+.off-screen-menu {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 466px;
   background-color: #856b5aa7;
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-101%);
   transition: transform .5s ease;
   z-index: 1000;
 }
-.off-screen-menu.active{
+
+.off-screen-menu.active {
   transform: translateX(0);
 }
-.search-bar{
+
+.search-bar {
   width: 100%;
   max-width: 570px;
   background: rgba(230, 230, 230, 0.21);
@@ -149,13 +178,15 @@ nav li:first-child{
   padding: 4px 16px;
   height: 30px;
 }
-.search-bar-wrapper{
+
+.search-bar-wrapper {
   flex: 1;
   display: flex;
   height: 38px;
   justify-content: center;
 }
-.search-bar input{
+
+.search-bar input {
   background: transparent;
   flex: 1;
   border: 0;
@@ -165,43 +196,50 @@ nav li:first-child{
   color: #523929;
   line-height: 1.1;
 }
-::placeholder{
+
+::placeholder {
   color: #70503ba8;
 }
-.search-bar svg{
+
+.search-bar svg {
   border: none;
   width: 25px;
   height: 25px;
   background: rgba(255, 255, 255, 0);
   padding-top: 1px;
 }
-#clear{
+
+#clear {
   cursor: pointer;
   display: none;
 }
-#clear:hover{
+
+#clear:hover {
   background-color: #5d463775;
   border-radius: 20px;
   box-shadow: 0 0 0 2px #5d463775;
 }
-.wrap{
+
+.wrap {
   display: block;
   object-fit: cover;
   overflow: hidden;
 }
 
-.search-box{
+.search-box {
   width: 500px;
   background: #9594946f;
   margin: 20px -160px;
   border-radius: 15px;
 }
-.row{
+
+.row {
   display: flex;
   align-items: center;
   padding: 10px 20px;
 }
-input{
+
+input {
   flex: 1;
   height: 50px;
   background: transparent;
@@ -212,37 +250,45 @@ input{
   padding-left: 9px;
   font-size: 20px;
 }
-.row svg{
+
+.row svg {
   border: none;
   width: 26px;
   height: 26px;
   background: rgba(255, 255, 255, 0);
   padding-top: 1px;
 }
-.row ::placeholder{
+
+.row ::placeholder {
   font-size: 20px;
   color: #909090;
 }
-.result-box ul{
+
+.result-box ul {
   border-top: 1px solid #666666;
   padding: 15px 10px;
 }
-.result-box ul li{
+
+.result-box ul li {
   list-style: none;
   border-radius: 3px;
   padding: 15px;
 }
-.result-box ul li:hover{
-  background-color:#7e7e7e6f;
+
+.result-box ul li:hover {
+  background-color: #7e7e7e6f;
 }
-.result-box{
+
+.result-box {
   max-height: 530px;
   overflow-y: scroll;
 }
-.choose{
+
+.choose {
   cursor: pointer;
 }
-.right-panel img{
+
+.right-panel img {
   border: 3px solid black;
 }
 
@@ -252,27 +298,24 @@ input{
   max-width: 600px;
   margin: 0 auto;
 }
-/* General container layout */
-/* Container layout */
+
 .container {
   display: flex;
   gap: 90px;
   padding: 40px;
   max-width: 1200px;
-  margin: 0 auto; /* Center horizontally */
+  margin: 0 auto;
 }
 
-/* Left panel layout */
 .left-panel {
-  flex: 0 0 480px;         /* Fixed width */
+  flex: 0 0 480px;
   max-width: 400px;
   margin-left: 75px;
   margin-top: 85px;
 }
 
-/* Right panel layout */
 .right-panel {
-  flex: 0 0 700px;         /* Fixed width, no growing or shrinking */
+  flex: 0 0 700px;
   background-color: white;
   padding: 1rem;
   border-radius: 8px;
@@ -294,7 +337,6 @@ input{
   border-radius: 8px;
 }
 
-/* Search and suggestions section */
 .search-container {
   display: flex;
   justify-content: center;
@@ -315,10 +357,12 @@ input{
   border: 1px solid #000;
   box-sizing: border-box;
 }
-.search-wrapper{
+
+.search-wrapper {
   position: relative;
   width: fit-content;
 }
+
 #flag-select {
   padding: 10px 12px;
   font-size: 16px;
@@ -327,7 +371,8 @@ input{
   border: 1px solid #000;
   height: 50px;
 }
-.flag-container{
+
+.flag-container {
   position: absolute;
   top: 10px;
   left: 350px;
@@ -359,7 +404,8 @@ input{
 .suggestion-box.highlighted {
   background-color: #FBFBFB;
 }
-.footer{
+
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,7 +413,8 @@ input{
   height: 100px;
   background-color: #7f6553;
 }
-.footer-content{
+
+.footer-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -375,19 +422,21 @@ input{
   transform: scale(1);
   transition: transform 0.3s ease;
 }
-.footer h3{
+
+.footer h3 {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 300;
   font-size: 30px;
 }
-.footer svg{
+
+.footer svg {
   display: flex;
 }
-.footer-content:hover{
+
+.footer-content:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
   cursor: pointer;
 }
-

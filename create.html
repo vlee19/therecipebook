@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Create Page</title>
@@ -15,7 +16,7 @@
         <label for="recipe-name">Recipe Name</label>
         <input type="text" id="recipe-name" placeholder="e.g., Churrasco con Arroz" required>
       </div>
-      
+
       <div class="field">
         <label for="serving-size">Serving Size</label>
         <input type="text" id="serving-size" placeholder="e.g., 4 servings">
@@ -25,9 +26,9 @@
         <label for="prep-time">Time to Make</label>
         <input type="text" id="prep-time" placeholder="e.g., 45 minutes">
       </div>
-  </div>
+    </div>
 
-  <div class="field">
+    <div class="field">
       <label for="recipe-culture">Select Culture(s)</label>
       <select id="recipe-culture" multiple>
         <option value="american">American</option>
@@ -41,49 +42,49 @@
         <option value="mexican">Mexican</option>
         <option value="thai">Thai</option>
       </select>
-      
+
       <label for="recipe-tags">Tags</label>
       <input type="text" id="recipe-tags" placeholder="Add tags like meat, spicy, vegan" />
 
-  </div>
-  
-  <label for="recipe-photo">Upload a Photo</label>
-  <input type="file" id="recipe-photo" accept="image/*" onchange="previewPhoto(event)">
-  <div id="photo-preview" class="center-photo-preview" style="margin-top: 10px;"></div>
-
-  <label for="recipe-description">Description</label>
-  <textarea id="recipe-description" rows="4" placeholder="Describe your recipe..." required></textarea>
-
-  <div class="recipe-body">
-    <div class="ingredients-section">
-      <label for="ingredient-input">Add Ingredient</label>
-      <div class="ingredient-controls">
-        <input type="text" id="ingredient-input" placeholder="e.g., 1 lb skirt steak">
-        <button type="button" class="add-btn" onclick="addIngredient()">
-          <span class="plus-sign">+</span> <span class="add-text">Add</span>
-        </button>
-
-      </div>
-
-      <label for="ingredient-category">Ingredient Category</label>
-      <div class="ingredient-controls">
-        <input type="text" id="ingredient-category" placeholder="e.g., Steak, Rice, Sauce">
-      </div>
-
-      <div id="categorized-ingredients" class="ingredient-list"></div>
     </div>
 
-    <div class="directions-section">
-      <label for="direction-input">Add Direction</label>
-      <div class="direction-controls">
-        <input type="text" id="direction-input" placeholder="e.g., Set the grill to 450°F">
-        <button type="button" class="add-btn" onclick="addDirection()">
-          <span class="plus-sign">+</span> <span class="add-text">Add</span>
-        </button>
+    <label for="recipe-photo">Upload a Photo</label>
+    <input type="file" id="recipe-photo" accept="image/*" onchange="previewPhoto(event)">
+    <div id="photo-preview" class="center-photo-preview" style="margin-top: 10px;"></div>
+
+    <label for="recipe-description">Description</label>
+    <textarea id="recipe-description" rows="4" placeholder="Describe your recipe..." required></textarea>
+
+    <div class="recipe-body">
+      <div class="ingredients-section">
+        <label for="ingredient-input">Add Ingredient</label>
+        <div class="ingredient-controls">
+          <input type="text" id="ingredient-input" placeholder="e.g., 1 lb skirt steak">
+          <button type="button" class="add-btn" onclick="addIngredient()">
+            <span class="plus-sign">+</span> <span class="add-text">Add</span>
+          </button>
+
+        </div>
+
+        <label for="ingredient-category">Ingredient Category</label>
+        <div class="ingredient-controls">
+          <input type="text" id="ingredient-category" placeholder="e.g., Steak, Rice, Sauce">
+        </div>
+
+        <div id="categorized-ingredients" class="ingredient-list"></div>
       </div>
-      <ol id="directions-list" class="direction-list"></ol>
+
+      <div class="directions-section">
+        <label for="direction-input">Add Direction</label>
+        <div class="direction-controls">
+          <input type="text" id="direction-input" placeholder="e.g., Set the grill to 450°F">
+          <button type="button" class="add-btn" onclick="addDirection()">
+            <span class="plus-sign">+</span> <span class="add-text">Add</span>
+          </button>
+        </div>
+        <ol id="directions-list" class="direction-list"></ol>
+      </div>
     </div>
-  </div>
 
     <ol id="directions-list" class="direction-list"></ol>
 
@@ -91,9 +92,10 @@
     <button class="save-btn" onclick="saveRecipe()">Save</button>
     <button class="submit-btn">Submit Recipe</button>
   </div>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="create.js"></script>
 
 </body>
+
 </html>
