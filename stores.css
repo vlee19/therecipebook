@@ -193,7 +193,7 @@ nav li:first-child{
 .search-box{
   width: 500px;
   background: #9594946f;
-  margin: 20px -100px;
+  margin: 20px -160px;
   border-radius: 15px;
 }
 .row{
@@ -314,6 +314,23 @@ input{
   font-size: 32px;
   border: 1px solid #000;
   box-sizing: border-box;
+}
+.search-wrapper{
+  position: relative;
+  width: fit-content;
+}
+#flag-select {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #000;
+  height: 50px;
+}
+.flag-container{
+  position: absolute;
+  top: 10px;
+  left: 350px;
 }
 
 /* Suggestions */

@@ -62,7 +62,8 @@
   <!-- MAIN LAYOUT -->
   <main class="container">
     <!-- LEFT PANEL -->
-    <section class="left-panel">
+    <div class="left-panel">
+      <div class="search-wrapper">
       <div class="search-box">
         <div class="row">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#555">
@@ -70,18 +71,28 @@
               d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
           </svg>
           <input type="text" id="input-box" placeholder="Search an ingredient" autocomplete="off">
+          
         </div>
         <div class="result-box">
         </div>
       </div>
-
-    </section>
+      <div class="flag-container">
+      <select id="flag-select">
+            <option value="us" data-img="american_flag.png">🇺🇸 USA</option>
+            <option value="mx" data-img="flags/mx.png">🇲🇽 Mexico</option>
+            <option value="it" data-img="flags/it.png">🇮🇹 Italy</option>
+            <option value="jp" data-img="flags/jp.png">🇯🇵 Japan</option>
+            <option value="in" data-img="flags/in.png">🇮🇳 India</option>
+          </select>
+          </div>
+          </div>
+    </div>
 
     <!-- RIGHT PANEL -->
     <section class="right-panel">
       <h2>Grocery Store Results</h2>
       <img id="Florida" src="images/map.png" alt="Florida">
-      
+
     </section>
   </main>
   <div class="footer">
